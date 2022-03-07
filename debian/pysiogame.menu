@@ -1,3 +1,0 @@
-?package(pysiogame):needs="X11" section="Applications/Education" \
-  title="pySioGame" command="/usr/games/pysiogame" \
-  icon="/usr/share/pixmaps/pysiogame.xpm"
