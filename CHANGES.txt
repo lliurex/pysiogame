@@ -1,0 +1,61 @@
+Changelog:
+eduActiv8 - 4.20.01:
+    - Bug fix update.
+    - Fixed the game crashing issue when launching any of the clock games when a non-default colour scheme is selected.
+    - Minor fixes.
+eduActiv8 - 4.19.12:
+    - Bulgarian translation added by Vanyo Georgiev
+    - Multiple activities redesigned - background colours changed and hover states added.
+    - New activities without ready answers added to maths section.
+    - Touch typing activity redesigned to improve contrast.
+    - Some typos and errors fixed.
+eduActiv8 - 4.19.02:
+    - a number of bug fixes
+    - a number of translations updated and added to transifex.com
+    - word building activities added across multiple languages (Italian, Spanish, Catalan and Portuguese) - some with limited word list, but work nevertheless.
+    - fraction matching game (102/242) enabled in Russian, Ukrainian and Italian
+    - new set of 12 word discovery activities added, also useful for confirming correctness of word list translations
+    - disabled state added to the eSpeak toggle button to indicate when text-to-speech is not available in a selected language
+eduActiv8 - 4.18.12:
+    - the menu has been replaced with a full screen activity selection screen
+        - this allows to display all activity icons without scrolling
+        - more space for activities since the menu does not take up any screen space while in activity mode
+        - the icons on new menu screen now display progress for each challenge activity
+        - the category and activity icons have been redesigned and scaled up
+        - categories rearranged into sub-groups to display less choices at a time.
+    - theme editing screen added to customize UI and menu colours
+    - a number of new activities added - covering elapsed time as well as negative numbers
+    - new activities on equivalent fractions as well as addition, subtraction, multiplication and division of fractions
+    - a lot of cosmetic fixes across the application
+
+eduActiv8 - 3.80.411:
+    - 20 new activities covering fractions, decimals, percentages and ratios - translations required for most languages.
+    - 4 new activities covering linear symmetry
+    - menu has been slightly redesigned - the activity icons now also have an accompanying icon indicating whether the activity is a simulation/demonstration of a concept or if it is a task that needs solving, or something else.
+    - from this version the game will check for updates and will let users know if a new one has been released - update will still have to be downloaded manually - can be disabled from the settings in the login screen. This option may need to be hidden before packaging for any distros - will sort it out with next release.
+
+eduActiv8 - 3.71.115:
+    - the feedback mechanism is now implemented in all activities that require completion
+    - new section added with 5 new games covering patterns (only in English and Polish at the moment)
+    - new section added covering negative numbers
+    - new shape matching activity
+
+eduActiv8 - 3.71.003:
+    - login screen colour scheme changed - on Android gradient removed due to problem with rendering
+    - auto validation implemented in a number of activities
+
+eduActiv8 - 3.70.919:
+    - compatibility with Android 7
+    - levels and menu can now be created for each locale separately (even after installation)
+
+eduActiv8 - 3.70.913:
+    - Serbian language added by Miroslav Nikolic (Мирослав Николић)
+    - Lakota Language added by Peter Hill, Derek Lackaff and Matthew Rama
+    - Catalan translation updated with a patch from Jordi Mallach and Guillem Jover
+    - compatibility with MacOS added
+    - minor changes to menu to enable scrolling on drag
+    - login screen redesigned
+    - menu moved to xml file
+    - levels moved from game files to levels.xml file allowing customization of levels after deployment (mainly maths games covered so far)
+    - minor improvements across a number of activities
+    - some images replaced
