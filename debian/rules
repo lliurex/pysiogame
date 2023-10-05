@@ -1,0 +1,65 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+config: config-stamp
+config-stamp: 
+	dh_testdir
+	[ ! -d debian/patches ] || $(MAKE) -f /usr/share/quilt/quilt.make patch
+	touch $@
+
+build-indep: build-stamp
+
+build-arch: build-stamp
+
+build: build-stamp
+build-stamp: config
+	dh_testdir
+	touch $@
+
+clean: 
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp config-stamp
+	[ ! -f Makefile ] || $(MAKE) clean
+	[ ! -d debian/patches ] || $(MAKE) -f /usr/share/quilt/quilt.make unpatch
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+	mkdir -p $(CURDIR)/debian/pysiogame/usr/games/
+	install -m 755 debian/run.sh $(CURDIR)/debian/pysiogame/usr/games/pysiogame
+
+# Build architecture-independent files here.
+binary-indep: install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs CHANGES.txt
+	dh_installdocs
+	dh_installexamples
+	dh_install -XLICENCE.txt -XLICENSE.txt -XLICENCE -XLICENSE -XGPL.txt
+	find debian/pysiogame/usr/share/ -type f | while read F; do chmod -x "$$F"; done
+	find debian/pysiogame/usr/share/ -type f -name FreeSans.ttf | while read F; do rm -v "$$F"; ln -vs "/usr/share/fonts/truetype/freefont/FreeSans.ttf" "$$F"; done
+	find debian/pysiogame/usr/share/ -type f -name FreeSansBold.ttf | while read F; do rm -v "$$F"; ln -vs "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf" "$$F"; done
+	find debian/pysiogame/usr/share/ -type f -name KacstOne.ttf | while read F; do rm -v "$$F"; ln -vs "/usr/share/fonts/truetype/kacst-one/KacstOne.ttf" "$$F"; done
+	find debian/pysiogame/usr/share/ -type f -name KacstOne-Bold.ttf | while read F; do rm -v "$$F"; ln -vs "/usr/share/fonts/truetype/kacst-one/KacstOne-Bold.ttf" "$$F"; done
+	dh_installmenu
+	dh_installman
+	dh_link
+	dh_compress
+	dh_fixperms
+	[ ! -e /usr/bin/dh_buildinfo ] || dh_buildinfo
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+binary-arch: install
+
+binary: binary-indep binary-arch
+.PHONY: config build-indep build-arch build clean binary-indep binary-arch binary install 
