@@ -1,0 +1,1772 @@
+# eduActiv8 - word lists - translation file.
+# ami.g <amihaygal@gmail.com>, 2020.
+# This file is part of the eduActiv8 project and is distributed under GPLv3 licence.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 4.19.02\n"
+"Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
+"Last-Translator: ami.g <amihaygal@gmail.com>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+
+msgid "cow"
+msgstr "פרה"
+
+msgid "turkey"
+msgstr "תרנגול הודו"
+
+msgid "shrimp"
+msgstr "שרימפ"
+
+msgid "wolf"
+msgstr "זאב"
+
+msgid "panther"
+msgstr "פנתר"
+
+msgid "panda"
+msgstr "פנדה"
+
+msgid "magpie"
+msgstr "עקעק"
+
+msgid "clam"
+msgstr "צדפה"
+
+msgid "pony"
+msgstr "פוני"
+
+msgid "mouse"
+msgstr "עכבר"
+
+msgid "pug"
+msgstr "פּאג"
+
+msgid "koala"
+msgstr "קואלה"
+
+msgid "frog"
+msgstr "צפרדע"
+
+msgid "ladybug"
+msgstr "מושית השש"
+
+msgid "gorilla"
+msgstr "גורילה"
+
+msgid "llama"
+msgstr ""
+
+msgid "vulture"
+msgstr "נשר"
+
+msgid "hamster"
+msgstr ""
+
+msgid "bird"
+msgstr "ציפור"
+
+msgid "starfish"
+msgstr "כוכב ים"
+
+msgid "crow"
+msgstr "עורב"
+
+msgid "parakeet"
+msgstr "דררה"
+
+msgid "caterpillar"
+msgstr "זחל"
+
+msgid "tiger"
+msgstr "טיגריס"
+
+msgid "hummingbird"
+msgstr "צופית"
+
+msgid "piranha"
+msgstr "פירנה"
+
+msgid "pig"
+msgstr "חזיר"
+
+msgid "scorpion"
+msgstr "עקרב"
+
+msgid "fox"
+msgstr "שועל"
+
+msgid "leopard"
+msgstr "נמר"
+
+msgid "iguana"
+msgstr "איגואנה"
+
+msgid "dolphin"
+msgstr "דולפין"
+
+msgid "bat"
+msgstr "עטלף"
+
+msgid "chick"
+msgstr "אפרוח"
+
+msgid "crab"
+msgstr "סרטן"
+
+msgid "hen"
+msgstr "תרנגולת"
+
+msgid "wasp"
+msgstr "צרעה"
+
+msgid "chameleon"
+msgstr "זיקית"
+
+msgid "whale"
+msgstr "לוויתן"
+
+msgid "hedgehog"
+msgstr "קיפוד"
+
+msgid "fawn"
+msgstr "עופר"
+
+msgid "moose"
+msgstr "אַיָּל קוֹרֵא"
+
+msgid "bee"
+msgstr "דבורה"
+
+msgid "viper"
+msgstr "צפע"
+
+msgid "shrike"
+msgstr ""
+
+msgid "donkey"
+msgstr ""
+
+msgid "guinea pig"
+msgstr ""
+
+msgid "sloth"
+msgstr "עצלן"
+
+msgid "horse"
+msgstr "סוס"
+
+msgid "penguin"
+msgstr ""
+
+msgid "otter"
+msgstr "לוטרה"
+
+msgid "bear"
+msgstr "דוב"
+
+msgid "zebra"
+msgstr "זברה"
+
+msgid "ostrich"
+msgstr "יען"
+
+msgid "camel"
+msgstr "גמל"
+
+msgid "antelope"
+msgstr "אנטילופה"
+
+msgid "lemur"
+msgstr "למור"
+
+msgid "pigeon"
+msgstr "יונה"
+
+msgid "lama"
+msgstr "למה"
+
+msgid "mole"
+msgstr "חפרפרת"
+
+msgid "ray"
+msgstr ""
+
+msgid "ram"
+msgstr ""
+
+msgid "skunk"
+msgstr "בואש"
+
+msgid "jellyfish"
+msgstr "מדוזה"
+
+msgid "sheep"
+msgstr "כבשה"
+
+msgid "shark"
+msgstr "כריש"
+
+msgid "kitten"
+msgstr "חתלתול"
+
+msgid "deer"
+msgstr "אייל"
+
+msgid "snail"
+msgstr "חלזון"
+
+msgid "flamingo"
+msgstr "פלמינגו"
+
+msgid "rabbit"
+msgstr "ארנב"
+
+msgid "oyster"
+msgstr "צדפה"
+
+msgid "beaver"
+msgstr "בונה"
+
+msgid "sparrow"
+msgstr "דרור"
+
+msgid "dove"
+msgstr "יונה"
+
+msgid "eagle"
+msgstr "עיט"
+
+msgid "beetle"
+msgstr "חיפושית"
+
+msgid "hippopotamus"
+msgstr "היפופוטם"
+
+msgid "owl"
+msgstr "ינשוף"
+
+msgid "cobra"
+msgstr "קוברה"
+
+msgid "salamander"
+msgstr "סלמנדרה"
+
+msgid "goose"
+msgstr "אווז"
+
+msgid "kangaroo"
+msgstr "קנגרו"
+
+msgid "dragonfly"
+msgstr "שפירית"
+
+msgid "toad"
+msgstr "קרפדה"
+
+msgid "pelican"
+msgstr "שקנאי"
+
+msgid "squid"
+msgstr "דיונון"
+
+msgid "lion cub"
+msgstr ""
+
+msgid "jaguar"
+msgstr "יגואר"
+
+msgid "duck"
+msgstr "ברווז"
+
+msgid "lizard"
+msgstr "לטאה"
+
+msgid "rhinoceros"
+msgstr "קרנף"
+
+msgid "hyena"
+msgstr "תן"
+
+msgid "ox"
+msgstr "שור"
+
+msgid "peacock"
+msgstr "טווס"
+
+msgid "parrot"
+msgstr "תוכי"
+
+msgid "elk"
+msgstr "אַיָּל קוֹרֵא"
+
+msgid "alligator"
+msgstr "תנין"
+
+msgid "ant"
+msgstr "נמלה"
+
+msgid "goat"
+msgstr "תיש"
+
+msgid "baby rabbit"
+msgstr ""
+
+msgid "lion"
+msgstr "אריה"
+
+msgid "squirrel"
+msgstr "סנאי"
+
+msgid "opossum"
+msgstr "אופוסום"
+
+msgid "chimp"
+msgstr "שמפנזה"
+
+msgid "doe"
+msgstr "איילה"
+
+msgid "gopher"
+msgstr ""
+
+msgid "elephant"
+msgstr ""
+
+msgid "giraffe"
+msgstr "ג'ירפה"
+
+msgid "spider"
+msgstr "עכביש"
+
+msgid "puppy"
+msgstr "כלבלב"
+
+msgid "jay"
+msgstr "עורבני"
+
+msgid "seal"
+msgstr ""
+
+msgid "rooster"
+msgstr ""
+
+msgid "turtle"
+msgstr "צב"
+
+msgid "bull"
+msgstr "שור"
+
+msgid "cat"
+msgstr "חתול"
+
+msgid "rat"
+msgstr "עכברוש"
+
+msgid "slug"
+msgstr "חשופית"
+
+msgid "buffalo"
+msgstr "באפלו"
+
+msgid "blackbird"
+msgstr "שָחרוּר"
+
+msgid "swan"
+msgstr "ברבור"
+
+msgid "lobster"
+msgstr "לובסטר"
+
+msgid "dog"
+msgstr "כלב"
+
+msgid "mosquito"
+msgstr "יתוש"
+
+msgid "snake"
+msgstr "נחש"
+
+msgid "chicken"
+msgstr "תרנגולת"
+
+msgid "anteater"
+msgstr "אוכל נמלים"
+
+msgid "judo"
+msgstr "ג'ודו"
+
+msgid "pool"
+msgstr "בריכת שחיה"
+
+msgid "ride"
+msgstr "רכיבה"
+
+msgid "stretch"
+msgstr "להתמתח"
+
+msgid "helmet"
+msgstr "קסדה"
+
+msgid "ice skating"
+msgstr ""
+
+msgid "walk"
+msgstr "ללכת"
+
+msgid "run"
+msgstr "לרוץ"
+
+msgid "swim"
+msgstr "שחיה"
+
+msgid "hop"
+msgstr "קפיצה"
+
+msgid "hike"
+msgstr "טיול"
+
+msgid "boxing"
+msgstr ""
+
+msgid "hockey"
+msgstr "הוקי"
+
+msgid "race"
+msgstr "מירוץ"
+
+msgid "throw"
+msgstr "זריקה"
+
+msgid "skate"
+msgstr "החלקה"
+
+msgid "win"
+msgstr "לנצח"
+
+msgid "squat"
+msgstr "לכופף ברכיים"
+
+msgid "ski"
+msgstr "גלישה"
+
+msgid "golf"
+msgstr "גולף"
+
+msgid "whistle"
+msgstr ""
+
+msgid "torch"
+msgstr "לפיד"
+
+msgid "sailing"
+msgstr ""
+
+msgid "stand"
+msgstr "לעמוד"
+
+msgid "tennis"
+msgstr "טניס"
+
+msgid "jump"
+msgstr "לקפוץ"
+
+msgid "rowing"
+msgstr "חתירה"
+
+msgid "jog"
+msgstr "ריצה"
+
+msgid "rope"
+msgstr "חבל"
+
+msgid "teeth"
+msgstr "שיניים"
+
+msgid "cheek"
+msgstr "לחי"
+
+msgid "ankle"
+msgstr "קרסול"
+
+msgid "knee"
+msgstr "ברך"
+
+msgid "toe"
+msgstr "בוהן"
+
+msgid "muscle"
+msgstr "שריר"
+
+msgid "mouth"
+msgstr "פה"
+
+msgid "feet"
+msgstr ""
+
+msgid "hand"
+msgstr "יד"
+
+msgid "elbow"
+msgstr "מרפק"
+
+msgid "hair"
+msgstr "שיער"
+
+msgid "eyelash"
+msgstr "ריסים"
+
+msgid "beard"
+msgstr "זָקן"
+
+msgid "belly button"
+msgstr ""
+
+msgid "thumb"
+msgstr "אגודל"
+
+msgid "breast"
+msgstr "חזה"
+
+msgid "nostril"
+msgstr "נחיר"
+
+msgid "nose"
+msgstr "אף"
+
+msgid "hip"
+msgstr "מותן"
+
+msgid "arm"
+msgstr "זרוע"
+
+msgid "eyebrow"
+msgstr ""
+
+msgid "fist"
+msgstr "אגרוף"
+
+msgid "neck"
+msgstr "צוואר"
+
+msgid "wrist"
+msgstr "פרק כף היד"
+
+msgid "throat"
+msgstr "גרון"
+
+msgid "eye"
+msgstr ""
+
+msgid "leg"
+msgstr "רגל"
+
+msgid "spine"
+msgstr "עמוד השידרה"
+
+msgid "ear"
+msgstr "אוזן"
+
+msgid "finger"
+msgstr "אצבע"
+
+msgid "foot"
+msgstr "כף הרגל"
+
+msgid "braid"
+msgstr "צמה"
+
+msgid "face"
+msgstr "פנים"
+
+msgid "back"
+msgstr "גב"
+
+msgid "chin"
+msgstr "סנטר"
+
+msgid "bottom"
+msgstr "טוסיק"
+
+msgid "thigh"
+msgstr "ירך"
+
+msgid "belly"
+msgstr "בטן"
+
+msgid "girl"
+msgstr "ילדה"
+
+msgid "male"
+msgstr ""
+
+msgid "son"
+msgstr "בן"
+
+msgid "mates"
+msgstr ""
+
+msgid "friends"
+msgstr ""
+
+msgid "baby"
+msgstr ""
+
+msgid "child"
+msgstr "ילד"
+
+msgid "dad"
+msgstr "אבא"
+
+msgid "mom"
+msgstr "אמא"
+
+msgid "twin boys"
+msgstr ""
+
+msgid "brothers"
+msgstr ""
+
+msgid "man"
+msgstr "איש"
+
+msgid "mother"
+msgstr "אמא"
+
+msgid "grandfather"
+msgstr ""
+
+msgid "family"
+msgstr "משפחה"
+
+msgid "female"
+msgstr ""
+
+msgid "wife"
+msgstr "אישה"
+
+msgid "husband"
+msgstr "בעל"
+
+msgid "bride"
+msgstr "כלה"
+
+msgid "madam"
+msgstr ""
+
+msgid "grandmother"
+msgstr "סבתא"
+
+msgid "couple"
+msgstr "זוג"
+
+msgid "lad"
+msgstr "נער"
+
+msgid "twin girls"
+msgstr ""
+
+msgid "tribe"
+msgstr "שבט"
+
+msgid "boy"
+msgstr "בן"
+
+msgid "sisters"
+msgstr ""
+
+msgid "woman"
+msgstr "אישה"
+
+msgid "lady"
+msgstr "גברת"
+
+msgid "candy"
+msgstr "סוכריה"
+
+msgid "sausage"
+msgstr "נקניק"
+
+msgid "hamburger"
+msgstr "המבורגר"
+
+msgid "steak"
+msgstr ""
+
+msgid "fudge"
+msgstr "פאדג'"
+
+msgid "doughnut"
+msgstr "סופגניה"
+
+msgid "coconut"
+msgstr "קוקוס"
+
+msgid "rice"
+msgstr "אורז"
+
+msgid "ice cream"
+msgstr ""
+
+msgid "jelly"
+msgstr "ג'לי"
+
+msgid "yoghurt"
+msgstr ""
+
+msgid "dessert"
+msgstr "קינוח"
+
+msgid "pretzel"
+msgstr ""
+
+msgid "peanut"
+msgstr ""
+
+msgid "jam"
+msgstr "ריבה"
+
+msgid "feast"
+msgstr "משתה"
+
+msgid "cookie"
+msgstr "עוגיות"
+
+msgid "bacon"
+msgstr ""
+
+msgid "spice"
+msgstr "תבלינים"
+
+msgid "coffee"
+msgstr "קפה"
+
+msgid "pie"
+msgstr "פאי"
+
+msgid "lemonade"
+msgstr "לימונדה"
+
+msgid "chocolate"
+msgstr "שוקולד"
+
+msgid "water bottle"
+msgstr ""
+
+msgid "lunch"
+msgstr "ארוחת צהריים"
+
+msgid "ice"
+msgstr "קרח"
+
+msgid "sugar"
+msgstr "סוכר"
+
+msgid "sauce"
+msgstr "רוטב"
+
+msgid "soup"
+msgstr "מרק"
+
+msgid "juice"
+msgstr "מיץ"
+
+msgid "fries"
+msgstr "טוגנים"
+
+msgid "cake"
+msgstr "עוגה"
+
+msgid "mashed potatoes"
+msgstr ""
+
+msgid "tea"
+msgstr ""
+
+msgid "bun"
+msgstr "לחמניה"
+
+msgid "cheese"
+msgstr "גבינה"
+
+msgid "beef"
+msgstr ""
+
+msgid "sandwich"
+msgstr "כריך"
+
+msgid "slice"
+msgstr ""
+
+msgid "sprinkle"
+msgstr "פיצפוצים"
+
+msgid "pizza"
+msgstr "פיצה"
+
+msgid "flour"
+msgstr "קמח"
+
+msgid "gum"
+msgstr "מסטיק"
+
+msgid "spaghetti"
+msgstr "ספגטי"
+
+msgid "roast"
+msgstr "צלי"
+
+msgid "stew"
+msgstr "נזיד"
+
+msgid "spread"
+msgstr "למרוח"
+
+msgid "meat"
+msgstr "בשר"
+
+msgid "milk"
+msgstr "חלב"
+
+msgid "meal"
+msgstr "ארוחה"
+
+msgid "corn"
+msgstr "תירס"
+
+msgid "bread"
+msgstr "לחם"
+
+msgid "walnut"
+msgstr "אגוז מלך"
+
+msgid "egg"
+msgstr "ביצה"
+
+msgid "hot dog"
+msgstr ""
+
+msgid "ham"
+msgstr "בשר חזיר"
+
+msgid "jewellery"
+msgstr ""
+
+msgid "sock"
+msgstr "גרב"
+
+msgid "jacket"
+msgstr "מעיל"
+
+msgid "heel"
+msgstr "עקב"
+
+msgid "smock"
+msgstr "חלוק עבודה"
+
+msgid "shorts"
+msgstr ""
+
+msgid "pocket"
+msgstr "כיס"
+
+msgid "necklace"
+msgstr "שרשרת"
+
+msgid "sweatshirt"
+msgstr "שווטשרט"
+
+msgid "uniform"
+msgstr "מדים"
+
+msgid "raincoat"
+msgstr "מעיל גשם"
+
+msgid "trousers"
+msgstr ""
+
+msgid "sunglasses"
+msgstr ""
+
+msgid "coat"
+msgstr "מעיל"
+
+msgid "pullover"
+msgstr "סוודר"
+
+msgid "shirt"
+msgstr "חולצה"
+
+msgid "sandals"
+msgstr "סנדלים"
+
+msgid "suit"
+msgstr "חליפה"
+
+msgid "pyjamas"
+msgstr ""
+
+msgid "skirt"
+msgstr "חצאית"
+
+msgid "zip"
+msgstr ""
+
+msgid "shoes"
+msgstr ""
+
+msgid "jewel"
+msgstr "תכשיט"
+
+msgid "tie"
+msgstr ""
+
+msgid "slippers"
+msgstr "כפכפים"
+
+msgid "gloves"
+msgstr ""
+
+msgid "hat"
+msgstr "כובע"
+
+msgid "sleeve"
+msgstr "שרוול"
+
+msgid "cap"
+msgstr "כובע"
+
+msgid "swimming suit"
+msgstr ""
+
+msgid "trainer"
+msgstr ""
+
+msgid "vest"
+msgstr "אפודה"
+
+msgid "glasses"
+msgstr "משקפיים"
+
+msgid "shoelace"
+msgstr "שרוך"
+
+msgid "patch"
+msgstr "טלאי"
+
+msgid "scarf"
+msgstr "צעיף"
+
+msgid "shoe"
+msgstr "נעל"
+
+msgid "button"
+msgstr "כפתור"
+
+msgid "dress"
+msgstr "שמלה"
+
+msgid "sash"
+msgstr "אבנט"
+
+msgid "shoe sole"
+msgstr ""
+
+msgid "robe"
+msgstr "גלימה"
+
+msgid "pants"
+msgstr "מכנסיים"
+
+msgid "kimono"
+msgstr "קימונו"
+
+msgid "overalls"
+msgstr ""
+
+msgid "lick"
+msgstr "ללקק"
+
+msgid "slam"
+msgstr "להטביע"
+
+msgid "beg"
+msgstr "להתחנן"
+
+msgid "fell"
+msgstr ""
+
+msgid "scratch"
+msgstr "לשרוט"
+
+msgid "touch"
+msgstr "לגעת"
+
+msgid "sniff"
+msgstr "לרחרח"
+
+msgid "see"
+msgstr "לראות"
+
+msgid "climb"
+msgstr "טיפוס"
+
+msgid "dig"
+msgstr "לחפור"
+
+msgid "howl"
+msgstr "לילל"
+
+msgid "sleep"
+msgstr "לישון"
+
+msgid "explore"
+msgstr "חקירה"
+
+msgid "draw"
+msgstr "לצייר"
+
+msgid "hug"
+msgstr "לחבק"
+
+msgid "teach"
+msgstr "ללמד"
+
+msgid "nap"
+msgstr "לנמנם"
+
+msgid "clay"
+msgstr "חימר"
+
+msgid "catch"
+msgstr "לתפוס"
+
+msgid "clap"
+msgstr "למחוא"
+
+msgid "cry"
+msgstr "לבכות"
+
+msgid "sing"
+msgstr "לשיר"
+
+msgid "meet"
+msgstr "להיפגש"
+
+msgid "sell"
+msgstr ""
+
+msgid "peck"
+msgstr "לנקר"
+
+msgid "beat"
+msgstr "להכות"
+
+msgid "kneel"
+msgstr "לכרוע ברך"
+
+msgid "find"
+msgstr "למצוא"
+
+msgid "dance"
+msgstr "ריקוד"
+
+msgid "cough"
+msgstr "להשתעל"
+
+msgid "cut"
+msgstr "לחתוך"
+
+msgid "think"
+msgstr "לחשוב"
+
+msgid "bark"
+msgstr "לנבוח"
+
+msgid "speak"
+msgstr "לדבר"
+
+msgid "cheer"
+msgstr "עידוד"
+
+msgid "bake"
+msgstr ""
+
+msgid "write"
+msgstr "לכתוב"
+
+msgid "punch"
+msgstr ""
+
+msgid "strum"
+msgstr ""
+
+msgid "study"
+msgstr "ללמוד"
+
+msgid "plow"
+msgstr "לחרוש"
+
+msgid "dream"
+msgstr "לחלום"
+
+msgid "post"
+msgstr "תיבת דואר"
+
+msgid "dive"
+msgstr "צלילה"
+
+msgid "whisper"
+msgstr "ללחוש"
+
+msgid "sob"
+msgstr "להתיפח"
+
+msgid "shake"
+msgstr "לנעֵר"
+
+msgid "feed"
+msgstr "להאכיל"
+
+msgid "crawl"
+msgstr "לזחול"
+
+msgid "camp"
+msgstr "מחנה"
+
+msgid "spill"
+msgstr "לשפוך"
+
+msgid "clean"
+msgstr "לנקות"
+
+msgid "scream"
+msgstr "לצרוח"
+
+msgid "tear"
+msgstr "לקרוע"
+
+msgid "float"
+msgstr "לצוף"
+
+msgid "pull"
+msgstr "למשוך"
+
+msgid "ate"
+msgstr ""
+
+msgid "kiss"
+msgstr "להתנשק"
+
+msgid "sit"
+msgstr "לשבת"
+
+msgid "hatch"
+msgstr "לבקוע"
+
+msgid "blink"
+msgstr "לקרוץ"
+
+msgid "hear"
+msgstr "לשמוע"
+
+msgid "smooch"
+msgstr "להתחשמק"
+
+msgid "play"
+msgstr "לשחק"
+
+msgid "wash"
+msgstr "להתרחץ"
+
+msgid "chat"
+msgstr "לשוחח"
+
+msgid "drive"
+msgstr "לנהוג"
+
+msgid "to drink"
+msgstr "שתיה"
+
+msgid "fly"
+msgstr "לעוף"
+
+msgid "juggle"
+msgstr ""
+
+msgid "bit"
+msgstr "בּיט"
+
+msgid "sweep"
+msgstr ""
+
+msgid "look"
+msgstr "להסתכל"
+
+msgid "knit"
+msgstr "לסרוג"
+
+msgid "lift"
+msgstr "הרמת משקולות"
+
+msgid "fetch"
+msgstr "להביא"
+
+msgid "read"
+msgstr "לקרוא"
+
+msgid "croak"
+msgstr "לקרקר"
+
+msgid "stare"
+msgstr "לבהות"
+
+msgid "eat"
+msgstr "לאכול"
+
+msgid "lighthouse"
+msgstr "מגדלור"
+
+msgid "door"
+msgstr "דלת"
+
+msgid "circus"
+msgstr "קרקס"
+
+msgid "church"
+msgstr ""
+
+msgid "kennel"
+msgstr ""
+
+msgid "temple"
+msgstr "מקדש"
+
+msgid "smoke"
+msgstr "עשן"
+
+msgid "chimney"
+msgstr "ארובה"
+
+msgid "brick"
+msgstr "לבֵנה"
+
+msgid "well"
+msgstr ""
+
+msgid "street"
+msgstr "רחוב"
+
+msgid "castle"
+msgstr "טירה"
+
+msgid "store"
+msgstr "חנות"
+
+msgid "staircase"
+msgstr "מדרגות"
+
+msgid "school"
+msgstr "בית ספר"
+
+msgid "farm"
+msgstr "חווה"
+
+msgid "bridge"
+msgstr "גשר"
+
+msgid "dam"
+msgstr "סכר"
+
+msgid "pyramid"
+msgstr "פירמידה"
+
+msgid "barn"
+msgstr "אסם"
+
+msgid "mill"
+msgstr "טחנת קמח"
+
+msgid "window"
+msgstr "חלון"
+
+msgid "cabin"
+msgstr "ביקתה"
+
+msgid "step"
+msgstr "מדרגה"
+
+msgid "shop"
+msgstr "חנות"
+
+msgid "shed"
+msgstr "סככה"
+
+msgid "roof"
+msgstr "גג"
+
+msgid "steeple"
+msgstr "צריח"
+
+msgid "garage"
+msgstr "חניה"
+
+msgid "mosque"
+msgstr "מסגד"
+
+msgid "hospital"
+msgstr "בית חולים"
+
+msgid "tent"
+msgstr "אוהל"
+
+msgid "house"
+msgstr "בית"
+
+msgid "wall"
+msgstr "קיר"
+
+msgid "bank"
+msgstr "בנק"
+
+msgid "shutter"
+msgstr "תריס"
+
+msgid "hut"
+msgstr "בקתה"
+
+msgid "land"
+msgstr "אדמה"
+
+msgid "cliff"
+msgstr "צוק"
+
+msgid "hill"
+msgstr "גבעה"
+
+msgid "canyon"
+msgstr "קניון"
+
+msgid "rock"
+msgstr "סלע"
+
+msgid "sea"
+msgstr "ים"
+
+msgid "lake"
+msgstr "אגם"
+
+msgid "coast"
+msgstr "חוף"
+
+msgid "shore"
+msgstr "חוף"
+
+msgid "mountain"
+msgstr "הרים"
+
+msgid "pond"
+msgstr "בִּיצה"
+
+msgid "peak"
+msgstr "פסגה"
+
+msgid "lava"
+msgstr "לבה"
+
+msgid "cave"
+msgstr "מערה"
+
+msgid "dune"
+msgstr "דיונה"
+
+msgid "island"
+msgstr "אי"
+
+msgid "forest"
+msgstr "יער"
+
+msgid "desert"
+msgstr "מדבר"
+
+msgid "iceberg"
+msgstr "קרחון"
+
+msgid "clown"
+msgstr "ליצן"
+
+msgid "engineer"
+msgstr "מהנדס"
+
+msgid "priest"
+msgstr "כומר"
+
+msgid "vet"
+msgstr "וטרינר"
+
+msgid "judge"
+msgstr "שופט"
+
+msgid "chef"
+msgstr "שף"
+
+msgid "athlete"
+msgstr "ספורטאי"
+
+msgid "librarian"
+msgstr "ספרן"
+
+msgid "juggler"
+msgstr "להטוטן"
+
+msgid "policeman"
+msgstr ""
+
+msgid "plumber"
+msgstr "שרברב"
+
+msgid "badge"
+msgstr "תג"
+
+msgid "queen"
+msgstr "מלכה"
+
+msgid "farmer"
+msgstr "חקלאי"
+
+msgid "magician"
+msgstr ""
+
+msgid "knight"
+msgstr "אביר/ה"
+
+msgid "doctor"
+msgstr "רופא"
+
+msgid "bricklayer"
+msgstr "בנאי"
+
+msgid "cleaner"
+msgstr ""
+
+msgid "teacher"
+msgstr "מורָה"
+
+msgid "hunter"
+msgstr "צייָד"
+
+msgid "soldier"
+msgstr "חייל"
+
+msgid "musician"
+msgstr "מוזיקאי"
+
+msgid "lawyer"
+msgstr "עורך דין"
+
+msgid "fisherman"
+msgstr "דייָג"
+
+msgid "princess"
+msgstr "נסיכה"
+
+msgid "fireman"
+msgstr "כבאי"
+
+msgid "nun"
+msgstr "נזירה"
+
+msgid "pirate"
+msgstr "פיראט"
+
+msgid "cowboy"
+msgstr "בוקר - קאובוי"
+
+msgid "electrician"
+msgstr "חשמלאי"
+
+msgid "nurse"
+msgstr "אחות"
+
+msgid "king"
+msgstr "מלך"
+
+msgid "president"
+msgstr "נשיא/ה"
+
+msgid "office worker"
+msgstr ""
+
+msgid "carpenter"
+msgstr "נגר"
+
+msgid "jockey"
+msgstr "רוכב"
+
+msgid "worker"
+msgstr "פועל"
+
+msgid "mechanic"
+msgstr "מכונאי"
+
+msgid "pilot"
+msgstr "טייס"
+
+msgid "actor"
+msgstr "שחקן"
+
+msgid "cook"
+msgstr "לבשל"
+
+msgid "student"
+msgstr "תלמיד"
+
+msgid "butcher"
+msgstr "קָצב"
+
+msgid "accountant"
+msgstr "רואה-חשבון"
+
+msgid "prince"
+msgstr "נסיך"
+
+msgid "pope"
+msgstr "אפיפיור"
+
+msgid "sailor"
+msgstr "מלח"
+
+msgid "boxer"
+msgstr "מתאגרף"
+
+msgid "ballet dancer"
+msgstr ""
+
+msgid "coach"
+msgstr "מאמנת"
+
+msgid "astronaut"
+msgstr "אשת חלל"
+
+msgid "painter"
+msgstr ""
+
+msgid "anaesthesiologist"
+msgstr ""
+
+msgid "scientist"
+msgstr ""
+
+msgid "carrot"
+msgstr "גזר"
+
+msgid "blackberries"
+msgstr ""
+
+msgid "celery"
+msgstr "סלרי"
+
+msgid "turnip"
+msgstr "לפת"
+
+msgid "cacao"
+msgstr "קקאו"
+
+msgid "peach"
+msgstr "אפרסק"
+
+msgid "melon"
+msgstr "מילון"
+
+msgid "grapefruit"
+msgstr "אשכולית"
+
+msgid "broccoli"
+msgstr "ברוקולי"
+
+msgid "grapes"
+msgstr ""
+
+msgid "spinach"
+msgstr "תרד"
+
+msgid "fig"
+msgstr "תאנה"
+
+msgid "kernel"
+msgstr "גרעין"
+
+msgid "radish"
+msgstr "צנון"
+
+msgid "tomato"
+msgstr ""
+
+msgid "kiwi"
+msgstr "קיווי"
+
+msgid "asparagus"
+msgstr "אספרגוס"
+
+msgid "olives"
+msgstr ""
+
+msgid "cucumbers"
+msgstr ""
+
+msgid "beans"
+msgstr ""
+
+msgid "strawberry"
+msgstr "תות"
+
+msgid "peppers"
+msgstr "פלפלים"
+
+msgid "raspberry"
+msgstr "פטל אדום"
+
+msgid "apricot"
+msgstr "מישמש"
+
+msgid "potatoes"
+msgstr ""
+
+msgid "peas"
+msgstr ""
+
+msgid "cabbage"
+msgstr "כרוב"
+
+msgid "cherries"
+msgstr ""
+
+msgid "squash"
+msgstr "דלועים"
+
+msgid "blueberries"
+msgstr ""
+
+msgid "pear"
+msgstr "אגס"
+
+msgid "orange"
+msgstr "תפוז"
+
+msgid "pumpkin"
+msgstr "דלעת"
+
+msgid "avocado"
+msgstr "אבוקדו"
+
+msgid "garlic"
+msgstr "שום"
+
+msgid "onion"
+msgstr "בצל"
+
+msgid "apple"
+msgstr "תפוח"
+
+msgid "lime"
+msgstr "ליים"
+
+msgid "cauliflower"
+msgstr "כרובית"
+
+msgid "mango"
+msgstr "מנגו"
+
+msgid "lettuce"
+msgstr "חסה"
+
+msgid "lemon"
+msgstr "לימון"
+
+msgid "aubergine"
+msgstr ""
+
+msgid "artichokes"
+msgstr ""
+
+msgid "plums"
+msgstr ""
+
+msgid "leek"
+msgstr "כרישה"
+
+msgid "bananas"
+msgstr ""
+
+msgid "papaya"
+msgstr "פפאיה"
+
+msgid "sail"
+msgstr "להפליג"
+
+msgid "taxi"
+msgstr "מונית"
+
+msgid "car"
+msgstr "מכונית"
+
+msgid "bike"
+msgstr "אופניים"
+
+msgid "raft"
+msgstr "רפסודה"
+
+msgid "pedal"
+msgstr "פֵּדָל"
+
+msgid "bus"
+msgstr "אוטובוס"
+
+msgid "handlebar"
+msgstr "כידון"
+
+msgid "boat"
+msgstr "סירה"
+
+msgid "truck"
+msgstr "משאית"
+
+msgid "sleigh"
+msgstr "מזחלת"
+
+msgid "carpet"
+msgstr "שטיח"
+
+msgid "motorcycle"
+msgstr "אופנוע"
+
+msgid "train"
+msgstr "רכבת"
+
+msgid "ship"
+msgstr "אוניה"
+
+msgid "van"
+msgstr "מכונית מסחרית"
+
+msgid "canoe"
+msgstr "קאנו"
+
+msgid "rocket"
+msgstr "טיל"
+
+msgid "mast"
+msgstr "תורֵן"
+
+msgid "sledge"
+msgstr ""
+
+msgid "bicycle"
+msgstr ""
+

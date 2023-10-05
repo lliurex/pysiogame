@@ -9,7 +9,6 @@ import classes.drw.fraction_hq
 import classes.extras as ex
 import classes.game_driver as gd
 import classes.level_controller as lc
-import classes.drw.fraction_hq
 
 
 class Board(gd.BoardGame):
@@ -30,7 +29,8 @@ class Board(gd.BoardGame):
             self.color2 = ex.hsv_to_rgb(h, 255, 170)  # contours & borders
             self.font_color = ex.hsv_to_rgb(h, 255, 100)
         else:
-            self.font_color = self.mainloop.scheme.u_font_color  # ex.hsv_to_rgb(h,255,100)
+            h = 170
+            self.font_color = self.mainloop.scheme.u_font_color
             if self.mainloop.scheme.dark:
                 self.bg_col = (0, 0, 1)
                 self.color2 = (0, 0, 200)
@@ -156,8 +156,8 @@ class Board(gd.BoardGame):
         self.board.all_sprites_list.move_to_front(self.board.units[ind])
 
         for i in range(2):
-            self.fraction = classes.drw.fraction_hq.Fraction(1, self.board.scale * self.board.units[i].grid_w, color1, color2, bd_color1,
-                                                             bd_color2, numbers[i], 1)
+            self.fraction = classes.drw.fraction_hq.Fraction(1, self.board.scale * self.board.units[i].grid_w, color1,
+                                                             color2, bd_color1, bd_color2, numbers[i], 1)
             self.board.units[i].painting = self.fraction.get_canvas().copy()
 
     def show_info_dialog(self):
@@ -167,11 +167,11 @@ class Board(gd.BoardGame):
     def draw_fractions(self, canvas, size, center, color):
         lh = max(int(size * 0.05), 2)
         la = self.mainloop.config.font_start_at_adjustment
-        pygame.draw.line(canvas, self.font_color, [center[0] - size // 7, center[1] - lh // 2 + la],
+        pygame.draw.line(canvas, color, [center[0] - size // 7, center[1] - lh // 2 + la],
                          [center[0] + size // 7, center[1] - lh // 2 + la], lh)
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
         if event.type == pygame.MOUSEBUTTONUP:
             for each in self.board.units:
                 if each.is_door is True:
@@ -187,7 +187,7 @@ class Board(gd.BoardGame):
 
     def update(self, game):
         game.fill(self.bg_col)
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def auto_check_reset(self):
         for each in self.board.ships:

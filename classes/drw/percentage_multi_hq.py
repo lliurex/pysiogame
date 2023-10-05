@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pygame
-from math import pi, cos, sin, radians
+from math import pi, cos, sin
 
 from classes.simple_vector import Vector2
 
@@ -13,7 +13,7 @@ class Percentage:
         self.numbers = numbers
         self.type = type
 
-        self.canvas = pygame.Surface([self.size, self.size - 1], flags=pygame.SRCALPHA)
+        self.canvas = pygame.Surface((self.size, self.size - 1), flags=pygame.SRCALPHA)
         self.set_colors(colors, b_colors)
         self.redraw()
 

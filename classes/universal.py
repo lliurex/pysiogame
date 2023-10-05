@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import colorsys
 import copy
 import os
 import pygame
 import sys
-
 import classes.extras as ex
 
 """ Template
@@ -18,6 +16,7 @@ self.board.add_universal_unit(grid_x=0, grid_y=0, grid_w=4, grid_h=4, txt="",
                                       txt_align=(0, 0), font_type=0,
                                       multi_color=True, alpha=True, immobilized=True)
 """
+
 
 class ImageLayer:
     def __init__(self, unit, canvas, img_src, alpha):
@@ -105,6 +104,7 @@ class Universal(pygame.sprite.Sprite):
         self.grid_last_y = grid_y
         self.alpha = alpha
         self.board = board
+        self.margin_x = self.board.scale * 0.2
         self.immobilized = immobilized
 
         self.fg_as_hover = fg_as_hover
@@ -183,15 +183,15 @@ class Universal(pygame.sprite.Sprite):
 
     def set_blit_mask(self, mask_img_src):
         self.use_blit_mask = True
-        self.mask_img_src =  mask_img_src
-        self.mask_surf = pygame.Surface([self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1],
+        self.mask_img_src = mask_img_src
+        self.mask_surf = pygame.Surface((self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1),
                                         flags=pygame.SRCALPHA)
         self.layer_mask = ImageLayer(self, self.mask_surf, self.mask_img_src, self.alpha)
         self.mask_surf.blit(self.layer_mask.img, self.layer_mask.img_pos)
         self.update_me = True
 
     def init_m_painting(self):
-        self.manual_painting = pygame.Surface([self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1], flags=pygame.SRCALPHA)
+        self.manual_painting = pygame.Surface((self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1), flags=pygame.SRCALPHA)
 
     def use_fg_as_hover(self):
         self.fg_as_hover = True
@@ -199,9 +199,9 @@ class Universal(pygame.sprite.Sprite):
     def init_images(self):
         # Set height, width, the -1 is to give it some space around for the margin
         if self.alpha:
-            self.image = pygame.Surface([self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1], flags=pygame.SRCALPHA)
+            self.image = pygame.Surface((self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1), flags=pygame.SRCALPHA)
         else:
-            self.image = pygame.Surface([self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1])
+            self.image = pygame.Surface((self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1))
 
         # Make our top-left corner the passed-in location. The +1 is the margin
         self.rect = self.image.get_rect()
@@ -240,9 +240,9 @@ class Universal(pygame.sprite.Sprite):
         self.grid_w = new_grid_w
         self.grid_h = new_grid_h
         if self.alpha:
-            self.image = pygame.Surface([self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1], flags=pygame.SRCALPHA)
+            self.image = pygame.Surface((self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1), flags=pygame.SRCALPHA)
         else:
-            self.image = pygame.Surface([self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1])
+            self.image = pygame.Surface((self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1))
         self.image.fill(self.bg_color)
 
     def set_display_check(self, value):
@@ -316,12 +316,12 @@ class Universal(pygame.sprite.Sprite):
 
     def pos_update(self):
         if self.grid_w > 0 and self.grid_h > 0:
-            self.image = pygame.Surface([self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1])
+            self.image = pygame.Surface((self.grid_w * self.board.scale - 1, self.grid_h * self.board.scale - 1))
             self.painting = self.image
             self.rect = self.image.get_rect()
             self.rect.topleft = [self.grid_x * self.board.scale + 1, self.grid_y * self.board.scale + 1]
         else:
-            self.image = pygame.Surface([1, 1])
+            self.image = pygame.Surface((1, 1))
             # self.painting = self.image
             self.rect = self.image.get_rect()
             self.rect.topleft = [self.grid_x * self.board.scale + 1, self.grid_y * self.board.scale + 1]
@@ -402,7 +402,6 @@ class Universal(pygame.sprite.Sprite):
                 if (not self.fg_as_hover) or (self.hover and self.fg_as_hover):
                     # apply foreground tint
 
-
                     if self.fg_tint_color is not None:
                         if not self.mirror:
                             if not self.use_blit_mask:
@@ -474,7 +473,7 @@ class Universal(pygame.sprite.Sprite):
                 if sys.version_info < (3, 0):
                     if isinstance(self.value, basestring):
                         # if a passed argument is a string turn it into a 1 item list
-                        if self.font.size(self.value)[0] < self.rect.w or not self.text_wrap:
+                        if self.font.size(self.value)[0] < self.rect.w - self.margin_x or not self.text_wrap:
                             value = [self.value]
                         else:
                             # else enter extra line breaks
@@ -483,7 +482,6 @@ class Universal(pygame.sprite.Sprite):
                                 test_line = ""
                                 word = ""
                                 value = []
-                                valx = ""
                                 try:
                                     valx = unicode(self.value, "utf-8")
                                 except UnicodeDecodeError:
@@ -500,7 +498,7 @@ class Universal(pygame.sprite.Sprite):
                                         line = "" + test_line
                                     elif valx[i] == " " or i == linelen - 1:
                                         test_line = test_line + word + valx[i]
-                                        if self.font.size(test_line)[0] < self.rect.w:
+                                        if self.font.size(test_line)[0] < self.rect.w - self.margin_x:
                                             line = "" + test_line
                                             word = ""
                                         else:
@@ -519,7 +517,7 @@ class Universal(pygame.sprite.Sprite):
                 else:
                     if isinstance(self.value, str):
                         # if a passed argument is a string turn it into a 1 item list
-                        if self.font.size(self.value)[0] < self.rect.w or not self.text_wrap:
+                        if self.font.size(self.value)[0] < self.rect.w - self.margin_x or not self.text_wrap:
                             value = [self.value]
                         else:
                             # else enter extra line breaks
@@ -539,7 +537,7 @@ class Universal(pygame.sprite.Sprite):
                                         line = "" + test_line
                                     elif valx[i] == " " or i == linelen - 1:
                                         test_line = test_line + word + valx[i]
-                                        if self.font.size(test_line)[0] < self.rect.w:
+                                        if self.font.size(test_line)[0] < self.rect.w - self.margin_x:
                                             line = "" + test_line
                                             word = ""
                                         else:
@@ -568,7 +566,7 @@ class Universal(pygame.sprite.Sprite):
                     else:
                         val = value[i]
                     try:
-                        text = self.font.render("%s" % (val), 1, self.font_colors[0])
+                        text = self.font.render("%s" % val, 1, self.font_colors[0])
                     except:
                         pass
 
@@ -620,6 +618,12 @@ class Universal(pygame.sprite.Sprite):
                         text = self.font.render("%s" % (self.coltxt[1][i]), 1, self.font_colors[self.coltxt[0][i]])
                         self.image.blit(text, (font_x + self.coltxt[2][i], font_y))
 
+    def add_image(self, layer, img):
+        self.manual_painting_layer = layer
+        self.init_m_painting()
+        self.manual_painting = img.get_canvas().copy()
+        self.update_me = True
+
     def draw_check_marks(self):
         if self.check_display is not None:
             if self.check_display:
@@ -651,8 +655,8 @@ class Universal(pygame.sprite.Sprite):
         """draws an 'outline' around the unit"""
         pass
 
-    def set_outline(self, color=[255, 0, 0], width=2):
-        'enables the draw_outline and sets line color and width'
+    def set_outline(self, color=(255, 0, 0), width=2):
+        """enables the draw_outline and sets line color and width"""
         pass
 
     def move(self, board, x, y):
@@ -688,4 +692,3 @@ class Universal(pygame.sprite.Sprite):
             self.mouse_enter()
         elif event.type == pygame.MOUSEBUTTONUP:
             self.mouse_click()
-

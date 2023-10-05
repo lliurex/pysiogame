@@ -70,7 +70,6 @@ class Board(gd.BoardGame):
         self.board.draw_grid = False
 
         color = ex.hsv_to_rgb(225, 15, 235)
-        color2 = (255, 255, 255)
         self.col_r = (254, 39, 18)
         self.col_y = (254, 254, 51)
         self.col_b = (2, 71, 254)
@@ -170,7 +169,7 @@ class Board(gd.BoardGame):
                 self.board.all_sprites_list.move_to_front(self.board.units[i])
 
         self.canvas.set_outline([255, 229, 127], 1)
-        self.canv = pygame.Surface([self.canvas.grid_w * self.board.scale, self.canvas.grid_h * self.board.scale - 1])
+        self.canv = pygame.Surface((self.canvas.grid_w * self.board.scale, self.canvas.grid_h * self.board.scale - 1))
         self.board.all_sprites_list.move_to_back(self.board.board_bg)
         self.mix()
 
@@ -250,11 +249,11 @@ class Board(gd.BoardGame):
         self.mix()
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
 
     def update(self, game):
         game.fill((255, 255, 255))
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def check_result(self):
         pass

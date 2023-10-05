@@ -95,8 +95,6 @@ class Board(gd.BoardGame):
         end_at = start_from + data[2]
         j = 1
         for i in range(start_from, end_at):
-            s = 100
-            v = 255
             hx = h + (i - start_from) * data[5]
             color2 = ex.hsv_to_rgb(hx, 255, 200)
 
@@ -280,5 +278,5 @@ class Board(gd.BoardGame):
         else:
             correct = False
 
-        if correct == True:
+        if correct:
             self.level.next_board()

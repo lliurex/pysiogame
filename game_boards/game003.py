@@ -19,20 +19,14 @@ class Board(gd.BoardGame):
         self.show_info_btn = False
 
         white = (255, 255, 255)
-        color = white
 
         self.lang_titles = self.mainloop.lang.lang_titles
         self.all_lng = self.mainloop.lang.all_lng
         self.ok_lng = self.mainloop.lang.ok_lng
-        """
-        if self.mainloop.config.google_trans_languages == True:
-            self.languages = self.all_lng
-        else:
-        """
         self.languages = self.ok_lng
 
         self.lang_count = len(self.languages)
-        half = int(ceil(self.lang_count / 2))
+        half = int(ceil(self.lang_count / 2.0)) - 1
 
         data = [20, half + 3]
 
@@ -57,14 +51,23 @@ class Board(gd.BoardGame):
         for i in range(self.lang_count):
             if i <= half:
                 c = self.center - 4
-                t = i + 0
+                t = i
+                self.board.add_unit(c - 6, t, 2, 1, classes.board.Label, self.lang.lang_progress[i], white, "", 3)
+                self.board.units[-1].font_color = (200, 200, 200)
             else:
                 c = self.center + 4
-                t = i - half - 1 + 0
+                t = i - half - 1
+                self.board.add_unit(c + 4, t, 2, 1, classes.board.Label, self.lang.lang_progress[i], white, "", 3)
+                self.board.units[-1].font_color = (200, 200, 200)
             self.board.add_unit(c - 4, t, 8, 1, classes.board.Letter, self.lang_titles[i], white, "", 2)
-
+            self.board.units[-1].update_lng_font_size("def_2.0")
             if self.all_lng[i] == lang:
                 lng_index = i
+
+        self.board.add_unit(0, data[1]-1, data[0], 1, classes.board.Label, "https://www.transifex.com/eduactiv8/eduactiv8/", white, "", 3)
+        self.board.units[-1].font_color = (150, 150, 150)
+        self.board.units[-1].update_lng_font_size("def_2.0")
+
 
         for each in self.board.ships:
             each.immobilize()
@@ -75,18 +78,14 @@ class Board(gd.BoardGame):
         self.reselect(lng_index)
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
         if event.type == pygame.MOUSEBUTTONDOWN:
             active = self.board.active_ship
             if event.button == 1:
-                toggle = False
                 if active >= 0:
                     # change language
                     if self.lang.lang != self.languages[active]:
                         self.change_language(self.languages[active], self.lang_titles[active], active)
-                    if toggle:
-                        self.mainloop.fullscreen_toggle(self.mainloop.info)
-                    else:
                         self.level.load_level()
 
     def change_language(self, lng, lng_title, lang_id):
@@ -106,10 +105,12 @@ class Board(gd.BoardGame):
             sv = lng_title
         self.say(sv)
         self.mainloop.info.update_fonts()
+        self.mainloop.sb.update_fonts()
+        self.mainloop.dialog.reload_fonts()
         self.reselect(lang_id)
         self.mainloop.sb.resize()
         self.mainloop.sb.update_me = True
-        if lng in ['lkt', 'uk', 'bg']:
+        if lng in self.lang.tts_disabled_lngs:
             self.mainloop.sb.espeak_avail(False)
         else:
             self.mainloop.sb.espeak_avail(True)
@@ -118,15 +119,23 @@ class Board(gd.BoardGame):
         for each in self.board.ships:
             if each.unit_id != selectid:
                 each.font_color = (40, 40, 40)
-                each.font = self.board.font_sizes[2]
+                each.update_lng_font_size("def_1.75")
             else:
-                each.font_color = ex.hsv_to_rgb(self.mainloop.cl.color_sliders[5][0] * 16, 255, 200)
-                each.font = self.board.font_sizes[0]
+                each.font_color = ex.hsv_to_rgb(self.mainloop.cl.get_interface_hue(), 255, 200)
+                each.update_lng_font_size("def_1.25")
             each.update_me = True
+        """
+        # Malayam language - font selector - temporarily disabled
+        if selectid == self.board.ships[-2].unit_id:
+            self.board.ships[-2].update_lng_font_size("ml_1.25")
+        else:
+            self.board.ships[-2].update_lng_font_size("ml_1.75")
+        """
+
 
     def update(self, game):
         game.fill((255, 255, 255))
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def check_result(self):
         pass

@@ -159,7 +159,7 @@ class Board(gd.BoardGame):
 
         self.update_text_time()
 
-        self.canvas = pygame.Surface([self.size, self.size - 1])
+        self.canvas = pygame.Surface((self.size, self.size - 1))
         if self.mainloop.scheme is not None:
             self.canvas.fill(self.mainloop.scheme.u_color)
         else:
@@ -470,7 +470,7 @@ class Board(gd.BoardGame):
         return angle
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
         self.tm = self.time[:]
         if event.type == pygame.MOUSEMOTION and self.hand_id > 0:
             pos = [event.pos[0] - self.layout.game_left, event.pos[1] - self.layout.top_margin]

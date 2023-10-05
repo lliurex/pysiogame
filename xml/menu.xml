@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- next cat id = 39, next game id = 318 (271 - 272 - menu, 273 - menu colour chooser) -->
+<!-- next cat id = 39, next game id = 319 (271 - 272 - menu, 273 - menu colour chooser) -->
 <!-- title and subtitle must match already existing string from .po file so these can't just be changed here -->
 <!-- visible 0 - hide, 1 - show, use to temporarily hide activities -->
 <!-- "listening" used to mark which activities are listening activities that require TTS engine to work - if not available the activities will be hidden -->
@@ -13,7 +13,7 @@
                   title="Your Alphabet" 
                   subtitle="Letter Flashcards"
                   icon="ico_g_0100.png" ico_group="2" icosuffix="True" lang_activity="True"
-                  visible="1" lang_incl="" lang_excl="" require_uc="False" listening="False" android="True">
+                  visible="1" lang_incl="" lang_excl="['ar']" require_uc="False" listening="False" android="True">
             </game>
             <game mline="1" dbid="4" variant="0" var2="0" min_age="0" max_age="2"
                   constructor_id="37"
@@ -22,19 +22,26 @@
                   icon="ico_g_0101.png" ico_group="2" icosuffix="False" lang_activity="True"
                   visible="0" lang_incl="['en']" lang_excl="" require_uc="False" listening="False" android="True">
             </game>
+            <game mline="1" dbid="319" variant="0" var2="0" min_age="0" max_age="2"
+                  constructor_id="48"
+                  title="Your Alphabet"
+                  subtitle="Letter Flashcards"
+                  icon="ico_g_0100.png" ico_group="2" icosuffix="True" lang_activity="True"
+                  visible="1" lang_incl="['ar']" lang_excl="" require_uc="False" listening="False" android="True">
+            </game>
             <game mline="1" dbid="6" variant="0" var2="0" min_age="0" max_age="2"
                   constructor_id="10"
                   title="Learn to Write"
                   subtitle="Trace Letters"
                   icon="ico_g_0109.png" ico_group="1" icosuffix="False" lang_activity="True"
-                  visible="1" lang_incl="['en', 'it', 'pt', 'de']" lang_excl="" require_uc="False" listening="False" android="True">
+                  visible="1" lang_incl="['en', 'it', 'pt', 'de', 'nl']" lang_excl="" require_uc="False" listening="False" android="True">
             </game>
             <game mline="1" dbid="7" variant="1" var2="0" min_age="0" max_age="2"
                   constructor_id="10"
                   title="Learn to Write"
                   subtitle="Trace Letters"
                   icon="ico_g_0110.png" ico_group="1" icosuffix="False" lang_activity="True"
-                  visible="1" lang_incl="['en', 'it', 'pt', 'de']" lang_excl="" require_uc="False" listening="False" android="True">
+                  visible="1" lang_incl="['en', 'it', 'pt', 'de', 'nl']" lang_excl="" require_uc="False" listening="False" android="True">
             </game>
             <game mline="1" dbid="9" variant="2" var2="0" min_age="0" max_age="2"
                   constructor_id="10"
@@ -84,21 +91,21 @@
                   title="Word Builder"
                   subtitle=""
                   icon="ico_g_0200.png" ico_group="" icosuffix="False" lang_activity="True"
-                  visible="1" lang_incl="" lang_excl="['he']" require_uc="False" listening="False" android="True">
+                  visible="1" lang_incl="" lang_excl="['he', 'ar']" require_uc="False" listening="False" android="True">
             </game>
             <game mline="3" dbid="18" variant="0" var2="0" min_age="0" max_age="7"
                   constructor_id="23"
                   title="Word Maze"
                   subtitle="Collect all"
                   icon="ico_g_0201.png" ico_group="" icosuffix="False" lang_activity="True"
-                  visible="1" lang_incl="" lang_excl="['he']" require_uc="False" listening="False" android="False">
+                  visible="1" lang_incl="" lang_excl="['he', 'ar']" require_uc="False" listening="False" android="False">
             </game>
             <game mline="3" dbid="19" variant="1" var2="0" min_age="0" max_age="7"
                   constructor_id="23"
                   title="Word Maze + 4"
                   subtitle="Collect all"
                   icon="ico_g_0202.png" ico_group="" icosuffix="False" lang_activity="True"
-                  visible="1" lang_incl="" lang_excl="['he']" require_uc="False" listening="False" android="False">
+                  visible="1" lang_incl="" lang_excl="['he', 'ar']" require_uc="False" listening="False" android="False">
             </game>
             <game mline="3" dbid="14" variant="0" var2="0" min_age="0" max_age="7"
                   constructor_id="16"
@@ -133,7 +140,7 @@
         </cat>
         <cat mline="2" id="39" title="Learn new words" subtitle=""
              icon="ico_c_39.png" min_age="0" max_age="7" listening="False" android="True"
-             visible="1" lang_incl="['bg', 'en', 'es', 'ca', 'pl', 'uk', 'ru', 'fr', 'de', 'el', 'lk', 'pt', 'it']" lang_excl="" icosuffix="False"
+             visible="1" lang_incl="" lang_excl="['sr']" icosuffix="False"
              has_inner="False">
             <game mline="1" dbid="286" variant="0" var2="0" min_age="0" max_age="7"
                   constructor_id="121"
@@ -222,7 +229,7 @@
         </cat>
         <cat mline="2" id="2" title="Word Builders" subtitle=""
              icon="ico_c_02.png" min_age="0" max_age="7" listening="False" android="True"
-             visible="1" lang_incl="['bg', 'en', 'es', 'ca', 'pl', 'uk', 'ru', 'fr', 'de', 'el', 'lk', 'pt', 'it']" lang_excl="" icosuffix="False"
+             visible="1" lang_incl="" lang_excl="['sr']" icosuffix="False"
              has_inner="False">
             <game mline="1" dbid="107" variant="0" var2="0" min_age="0" max_age="7"
                   constructor_id="82"
@@ -311,7 +318,7 @@
         </cat>
         <cat mline="2" id="3" title="Word Builders" subtitle="Listening Exercises"
              icon="ico_c_20.png" min_age="0" max_age="7" listening="True" android="True"
-             visible="1" lang_incl="['en', 'es', 'ca', 'pl', 'ru', 'fr', 'de', 'el', 'pt', 'it']" lang_excl="" icosuffix="False"
+             visible="1" lang_incl="['en', 'es', 'ca', 'pl', 'ru', 'fr', 'de', 'el', 'pt', 'it', 'nl', 'fi']" lang_excl="" icosuffix="False"
              has_inner="False">
             <game mline="1" dbid="182" variant="0" var2="1" min_age="0" max_age="7"
                   constructor_id="82"
@@ -400,7 +407,7 @@
         </cat>
         <cat mline="2" id="4" title="Word Matchers" subtitle=""
              icon="ico_c_16.png" min_age="0" max_age="7" listening="False" android="True"
-             visible="1" lang_incl="['bg', 'en', 'es', 'ca', 'pl', 'uk', 'ru', 'fr', 'de', 'el', 'lk', 'pt', 'it']" lang_excl="" icosuffix="False"
+             visible="1" lang_incl="" lang_excl="['sr']" icosuffix="False"
              has_inner="False">
             <!-- matching games using arts4apps -->
             <game mline="1" dbid="154" variant="0" var2="0" min_age="0" max_age="7"
@@ -490,7 +497,7 @@
         </cat>
         <cat mline="2" id="5" title="Word Matchers" subtitle="Listening Exercises"
              icon="ico_c_21.png" min_age="0" max_age="7" listening="True" android="True"
-             visible="1" lang_incl="['en', 'es', 'ca', 'pl', 'ru', 'fr', 'de', 'el', 'pt', 'it']" lang_excl="" icosuffix="False"
+             visible="1" lang_incl="['en', 'es', 'ca', 'pl', 'ru', 'fr', 'de', 'el', 'pt', 'it', 'nl', 'fi']" lang_excl="" icosuffix="False"
              has_inner="False">
             <!-- matching games using arts4apps -->
             <game mline="1" dbid="194" variant="0" var2="0" min_age="0" max_age="7"
@@ -1185,7 +1192,7 @@
                       title="Matching fractions"
                       subtitle=""
                       icon="ico_g_2412.png" ico_group="" icosuffix="False" lang_activity="False"
-                      visible="1" lang_incl="['bg', 'en', 'pl', 'ru', 'uk', 'it', 'el']" lang_excl="" require_uc="False" listening="False" android="True">
+                      visible="1" lang_incl="['bg', 'en', 'pl', 'ru', 'uk', 'it', 'el', 'nl', 'ar']" lang_excl="" require_uc="False" listening="False" android="True">
                 </game>
                 <!--
                 <game mline="0" dbid="229" variant="0" var2="0" min_age="1" max_age="7"
@@ -1519,7 +1526,7 @@
                   title="Match shapes to their names"
                   subtitle=""
                   icon="ico_g_0504.png" ico_group="" icosuffix="False" lang_activity="False"
-                  visible="1" lang_incl="['bg', 'en', 'pl', 'es']" lang_excl="" require_uc="False" listening="False" android="True">
+                  visible="1" lang_incl="" lang_excl="['ca', 'de', 'fi', 'fr', 'he', 'lkt', 'pt', 'sr']" require_uc="False" listening="False" android="True">
             </game>
             <game mline="2" dbid="64" variant="0" var2="0" min_age="0" max_age="7"
                   constructor_id="59"

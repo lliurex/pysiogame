@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import pygame
-
 import classes.board
 import classes.extras as ex
 import classes.game_driver as gd
@@ -17,13 +15,11 @@ class Board(gd.BoardGame):
         self.board.draw_grid = False
         self.show_info_btn = False
 
-        #color1 = (220, 220, 220)
-        #color2 = (255, 255, 255)
-        color1 = ex.hsv_to_rgb(self.mainloop.cl.color_sliders[5][0] * 16, 50, 255)
-        color2 = ex.hsv_to_rgb(self.mainloop.cl.color_sliders[5][0] * 16, 30, 255)
+        color1 = ex.hsv_to_rgb(self.mainloop.cl.get_interface_hue(), 50, 255)
+        color2 = ex.hsv_to_rgb(self.mainloop.cl.get_interface_hue(), 30, 255)
 
-        font_color = ex.hsv_to_rgb(self.mainloop.cl.color_sliders[5][0] * 16, 255, 50)
-        data = [18, 13]
+        font_color = ex.hsv_to_rgb(self.mainloop.cl.get_interface_hue(), 255, 50)
+        data = [18, 11]
         # stretch width to fit the screen size
         x_count = self.get_x_count(data[1], even=True)
         if x_count > data[0]:
@@ -56,10 +52,13 @@ class Board(gd.BoardGame):
         left = 0
         colors = [color1, color2]
 
-        #self.board.add_unit(0, 0, data[0], 1, classes.board.Label, self.lang.d["Translators"], colors[1], "", 4)
-
         # column 1
         top = 0
+        self.board.add_unit(left, top, lang_width, 1, classes.board.Label, ["Arabic", self.mainloop.config.arabic], colors[top % 2], "", 6)
+        self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label, ["Ayman Mahmoud"],
+                            colors[top % 2], "", 6)
+
+        top += 1
         self.board.add_unit(left, top, lang_width, 1, classes.board.Label, ["Bulgarian", "Български"], colors[top % 2],
                             "", 6)
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label,
@@ -71,6 +70,11 @@ class Board(gd.BoardGame):
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label,
                             ["Guillem Jover (www.hadrons.org/~guillem/)", "updated by Jordi Mallach"], colors[top % 2],
                             "", 6)
+        top += 1
+        self.board.add_unit(left, top, lang_width, 1, classes.board.Label, ["Dutch", "Nederlands"], colors[top % 2],
+                            "", 6)
+        self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label,
+                            ["translated by Steven Es", "updated by Larry Myerscough"], colors[top % 2], "", 6)
         top += 1
         self.board.add_unit(0, top, lang_width, 1, classes.board.Label, ["English", "English"], colors[top % 2], "", 6)
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label,
@@ -93,23 +97,24 @@ class Board(gd.BoardGame):
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label, "Oliver van der Bürie",
                             colors[top % 2], "", 6)
 
-        top += 1
+        top += 2
         self.board.add_unit(left, top, lang_width, 1, classes.board.Label, ["Hebrew", "תירבע"], colors[top % 2], "", 6)
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label, ["Ori Hoch"],
                             colors[top % 2], "", 6)
 
-        top += 1
+        # column 2
+        top = 0
+        left = middle
         self.board.add_unit(left, top, lang_width, 1, classes.board.Label, ["Italian", "Italiano"], colors[top % 2], "",
                             6)
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label, "Giuliano", colors[top % 2],
                             "", 6)
 
-        # column 2
-        top = 0
-        left = middle
+        top += 1
         self.board.add_unit(left, top, lang_width, 1, classes.board.Label, ["Lakota", "Lakȟótiyapi"], colors[top % 2], "", 6)
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label,
                             ["Peter Hill, Derek Lackaff and Matthew Rama"], colors[top % 2], "", 6)
+
         top += 1
         self.board.add_unit(left, top, lang_width, 1, classes.board.Label, ["Polish", "Polski"], colors[top % 2], "", 6)
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label,
@@ -142,11 +147,11 @@ class Board(gd.BoardGame):
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label,
                             "Yuri Chornoivan (Юрій Чорноіван)", colors[top % 2], "",
                             6)
-
+        """
         top += 1
         self.board.add_unit(left, top, lang_width, 1, classes.board.Label, ["", ""], colors[top % 2], "", 6)
         self.board.add_unit(left + lang_width, top, credits_width, 1, classes.board.Label, "", colors[top % 2], "", 6)
-
+        """
         # due to the number of people working on this one - it stays at the bottom and spreads across 2 columns
         # update top - to the height of the tallest column
         top = 8
@@ -161,13 +166,12 @@ class Board(gd.BoardGame):
             each.font_color = font_color
             each.align = 1
 
-
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
 
     def update(self, game):
         game.fill((255, 255, 255))
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def check_result(self):
         pass

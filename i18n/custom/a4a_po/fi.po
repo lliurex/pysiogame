@@ -1,0 +1,1770 @@
+# eduActiv8 - word lists - translation file.
+# Copyright (C) 2019 Ireneusz Imiolek
+# This file is part of the eduActiv8 project and is distributed under GPLv3 licence.
+#
+# Kindly Shared by GCompris Maintainers
+# From: https://invent.kde.org/education/gcompris/-/blob/master/src/activities/lang/resource/content-fi.json
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 4.19.02\n"
+"Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
+
+msgid "cow"
+msgstr "lehmä"
+
+msgid "turkey"
+msgstr "kalkkuna"
+
+msgid "shrimp"
+msgstr "katkarapu"
+
+msgid "wolf"
+msgstr "susi"
+
+msgid "panther"
+msgstr "pantteri"
+
+msgid "panda"
+msgstr "panda"
+
+msgid "magpie"
+msgstr "harakka"
+
+msgid "clam"
+msgstr "simpukka"
+
+msgid "pony"
+msgstr "poni"
+
+msgid "mouse"
+msgstr "hiiri"
+
+msgid "pug"
+msgstr "mopsi"
+
+msgid "koala"
+msgstr "koala"
+
+msgid "frog"
+msgstr "sammakko"
+
+msgid "ladybug"
+msgstr "leppäkerttu"
+
+msgid "gorilla"
+msgstr "gorilla"
+
+msgid "llama"
+msgstr ""
+
+msgid "vulture"
+msgstr "petolintu"
+
+msgid "hamster"
+msgstr ""
+
+msgid "bird"
+msgstr "lintu"
+
+msgid "starfish"
+msgstr "meritähti"
+
+msgid "crow"
+msgstr "varis"
+
+msgid "parakeet"
+msgstr "papukaija"
+
+msgid "caterpillar"
+msgstr "toukka"
+
+msgid "tiger"
+msgstr "tiikeri"
+
+msgid "hummingbird"
+msgstr "kolibri"
+
+msgid "piranha"
+msgstr "piraija"
+
+msgid "pig"
+msgstr "sika"
+
+msgid "scorpion"
+msgstr "skorpioni"
+
+msgid "fox"
+msgstr "kettu"
+
+msgid "leopard"
+msgstr "leopardi"
+
+msgid "iguana"
+msgstr "iguaani"
+
+msgid "dolphin"
+msgstr "delfiini"
+
+msgid "bat"
+msgstr "lepakko"
+
+msgid "chick"
+msgstr "kananpoika"
+
+msgid "crab"
+msgstr "rapu"
+
+msgid "hen"
+msgstr "kana"
+
+msgid "wasp"
+msgstr "ampiainen"
+
+msgid "chameleon"
+msgstr "kameleontti"
+
+msgid "whale"
+msgstr "valas"
+
+msgid "hedgehog"
+msgstr "siili"
+
+msgid "fawn"
+msgstr "kellanruskea"
+
+msgid "moose"
+msgstr "hirvi"
+
+msgid "bee"
+msgstr "mehiläinen"
+
+msgid "viper"
+msgstr "kyy"
+
+msgid "shrike"
+msgstr ""
+
+msgid "donkey"
+msgstr ""
+
+msgid "guinea pig"
+msgstr ""
+
+msgid "sloth"
+msgstr "laiskiainen"
+
+msgid "horse"
+msgstr "hevonen"
+
+msgid "penguin"
+msgstr ""
+
+msgid "otter"
+msgstr "saukko"
+
+msgid "bear"
+msgstr "karhu"
+
+msgid "zebra"
+msgstr "seepra"
+
+msgid "ostrich"
+msgstr "strutsi"
+
+msgid "camel"
+msgstr "kameli"
+
+msgid "antelope"
+msgstr "antilooppi"
+
+msgid "lemur"
+msgstr "maki"
+
+msgid "pigeon"
+msgstr "kyyhkynen"
+
+msgid "lama"
+msgstr "laama"
+
+msgid "mole"
+msgstr "myyrä"
+
+msgid "ray"
+msgstr ""
+
+msgid "ram"
+msgstr ""
+
+msgid "skunk"
+msgstr "haisunäätä"
+
+msgid "jellyfish"
+msgstr "meduusa"
+
+msgid "sheep"
+msgstr "lammas"
+
+msgid "shark"
+msgstr "hai"
+
+msgid "kitten"
+msgstr "kissanpentu"
+
+msgid "deer"
+msgstr "kauris"
+
+msgid "snail"
+msgstr "etana"
+
+msgid "flamingo"
+msgstr "flamingo"
+
+msgid "rabbit"
+msgstr "kani"
+
+msgid "oyster"
+msgstr "osteri"
+
+msgid "beaver"
+msgstr "majava"
+
+msgid "sparrow"
+msgstr "pääskynen"
+
+msgid "dove"
+msgstr "kyyhkynen"
+
+msgid "eagle"
+msgstr "kotka"
+
+msgid "beetle"
+msgstr "koppakuoriainen"
+
+msgid "hippopotamus"
+msgstr "virtahepo"
+
+msgid "owl"
+msgstr "pöllö"
+
+msgid "cobra"
+msgstr "kobra"
+
+msgid "salamander"
+msgstr "salamanteri"
+
+msgid "goose"
+msgstr "hanhi"
+
+msgid "kangaroo"
+msgstr "kenguru"
+
+msgid "dragonfly"
+msgstr "sudenkorento"
+
+msgid "toad"
+msgstr "rupikonna"
+
+msgid "pelican"
+msgstr "pelikaani"
+
+msgid "squid"
+msgstr "mustekala"
+
+msgid "lion cub"
+msgstr ""
+
+msgid "jaguar"
+msgstr "jaguaari"
+
+msgid "duck"
+msgstr "ankka"
+
+msgid "lizard"
+msgstr "lisko"
+
+msgid "rhinoceros"
+msgstr "sarvikuono"
+
+msgid "hyena"
+msgstr "hyeena"
+
+msgid "ox"
+msgstr "härkä"
+
+msgid "peacock"
+msgstr "riikinkukko"
+
+msgid "parrot"
+msgstr "papukaija"
+
+msgid "elk"
+msgstr "hirvi"
+
+msgid "alligator"
+msgstr "alligaattori"
+
+msgid "ant"
+msgstr "muurahainen"
+
+msgid "goat"
+msgstr "vuohi"
+
+msgid "baby rabbit"
+msgstr ""
+
+msgid "lion"
+msgstr "leijona"
+
+msgid "squirrel"
+msgstr "orava"
+
+msgid "opossum"
+msgstr "opossumi"
+
+msgid "chimp"
+msgstr "simpanssi"
+
+msgid "doe"
+msgstr "naaraspeura"
+
+msgid "gopher"
+msgstr ""
+
+msgid "elephant"
+msgstr ""
+
+msgid "giraffe"
+msgstr "kirahvi"
+
+msgid "spider"
+msgstr "hämähäkki"
+
+msgid "puppy"
+msgstr "koiranpentu"
+
+msgid "jay"
+msgstr "närhi"
+
+msgid "seal"
+msgstr ""
+
+msgid "rooster"
+msgstr ""
+
+msgid "turtle"
+msgstr "kilpikonna"
+
+msgid "bull"
+msgstr "härkä"
+
+msgid "cat"
+msgstr "kissa"
+
+msgid "rat"
+msgstr "rotta"
+
+msgid "slug"
+msgstr "etana"
+
+msgid "buffalo"
+msgstr "puhveli"
+
+msgid "blackbird"
+msgstr "mustarastas"
+
+msgid "swan"
+msgstr "joutsen"
+
+msgid "lobster"
+msgstr "hummeri"
+
+msgid "dog"
+msgstr "koira"
+
+msgid "mosquito"
+msgstr "hyttynen"
+
+msgid "snake"
+msgstr "käärme"
+
+msgid "chicken"
+msgstr "kana"
+
+msgid "anteater"
+msgstr "muurahaiskarhu"
+
+msgid "judo"
+msgstr "judo"
+
+msgid "pool"
+msgstr "uima-allas"
+
+msgid "ride"
+msgstr "ratsastaa"
+
+msgid "stretch"
+msgstr "venyttää"
+
+msgid "helmet"
+msgstr "kypärä"
+
+msgid "ice skating"
+msgstr ""
+
+msgid "walk"
+msgstr "kävellä"
+
+msgid "run"
+msgstr "juosta"
+
+msgid "swim"
+msgstr "uinti"
+
+msgid "hop"
+msgstr "hypätä"
+
+msgid "hike"
+msgstr "patikkaretki"
+
+msgid "boxing"
+msgstr ""
+
+msgid "hockey"
+msgstr "jääkiekko"
+
+msgid "race"
+msgstr "kisa"
+
+msgid "throw"
+msgstr "heitto"
+
+msgid "skate"
+msgstr "luistelu"
+
+msgid "win"
+msgstr "voittaa"
+
+msgid "squat"
+msgstr "kyykistyä"
+
+msgid "ski"
+msgstr "hiihto"
+
+msgid "golf"
+msgstr "golf"
+
+msgid "whistle"
+msgstr ""
+
+msgid "torch"
+msgstr "soihtu"
+
+msgid "sailing"
+msgstr ""
+
+msgid "stand"
+msgstr "seistä"
+
+msgid "tennis"
+msgstr "tennis"
+
+msgid "jump"
+msgstr "hypätä"
+
+msgid "rowing"
+msgstr "soutu"
+
+msgid "jog"
+msgstr "hölkkä"
+
+msgid "rope"
+msgstr "köysi"
+
+msgid "teeth"
+msgstr "hampaat"
+
+msgid "cheek"
+msgstr "poski"
+
+msgid "ankle"
+msgstr "nilkka"
+
+msgid "knee"
+msgstr "polvi"
+
+msgid "toe"
+msgstr "varvas"
+
+msgid "muscle"
+msgstr "lihas"
+
+msgid "mouth"
+msgstr "suu"
+
+msgid "feet"
+msgstr ""
+
+msgid "hand"
+msgstr "käsi"
+
+msgid "elbow"
+msgstr "kyynärpää"
+
+msgid "hair"
+msgstr "tukka"
+
+msgid "eyelash"
+msgstr "silmäripsi"
+
+msgid "beard"
+msgstr "parta"
+
+msgid "belly button"
+msgstr ""
+
+msgid "thumb"
+msgstr "peukalo"
+
+msgid "breast"
+msgstr "rinta"
+
+msgid "nostril"
+msgstr "sierain"
+
+msgid "nose"
+msgstr "nenä"
+
+msgid "hip"
+msgstr "lonkka"
+
+msgid "arm"
+msgstr "käsivarsi"
+
+msgid "eyebrow"
+msgstr ""
+
+msgid "fist"
+msgstr "nyrkki"
+
+msgid "neck"
+msgstr "niska"
+
+msgid "wrist"
+msgstr "ranne"
+
+msgid "throat"
+msgstr "kurkku"
+
+msgid "eye"
+msgstr ""
+
+msgid "leg"
+msgstr "sääri"
+
+msgid "spine"
+msgstr "selkäranka"
+
+msgid "ear"
+msgstr "korva"
+
+msgid "finger"
+msgstr "sormi"
+
+msgid "foot"
+msgstr "jalka"
+
+msgid "braid"
+msgstr "letti"
+
+msgid "face"
+msgstr "kasvot"
+
+msgid "back"
+msgstr "selkä"
+
+msgid "chin"
+msgstr "leuka"
+
+msgid "bottom"
+msgstr "takamus"
+
+msgid "thigh"
+msgstr "reisi"
+
+msgid "belly"
+msgstr "masu"
+
+msgid "girl"
+msgstr "tyttö"
+
+msgid "male"
+msgstr ""
+
+msgid "son"
+msgstr "poika"
+
+msgid "mates"
+msgstr ""
+
+msgid "friends"
+msgstr ""
+
+msgid "baby"
+msgstr ""
+
+msgid "child"
+msgstr "lapsi"
+
+msgid "dad"
+msgstr "isä"
+
+msgid "mom"
+msgstr "äiti"
+
+msgid "twin boys"
+msgstr ""
+
+msgid "brothers"
+msgstr ""
+
+msgid "man"
+msgstr "mies"
+
+msgid "mother"
+msgstr "äiti"
+
+msgid "grandfather"
+msgstr ""
+
+msgid "family"
+msgstr "perhe"
+
+msgid "female"
+msgstr ""
+
+msgid "wife"
+msgstr "vaimo"
+
+msgid "husband"
+msgstr "aviomies"
+
+msgid "bride"
+msgstr "morsian"
+
+msgid "madam"
+msgstr ""
+
+msgid "grandmother"
+msgstr "isoäiti"
+
+msgid "couple"
+msgstr "pariskunta"
+
+msgid "lad"
+msgstr "poika"
+
+msgid "twin girls"
+msgstr ""
+
+msgid "tribe"
+msgstr "heimo"
+
+msgid "boy"
+msgstr "poika"
+
+msgid "sisters"
+msgstr ""
+
+msgid "woman"
+msgstr "nainen"
+
+msgid "lady"
+msgstr "rouva"
+
+msgid "candy"
+msgstr "karkki"
+
+msgid "sausage"
+msgstr "makkara"
+
+msgid "hamburger"
+msgstr "hampurilainen"
+
+msgid "steak"
+msgstr ""
+
+msgid "fudge"
+msgstr "toffee"
+
+msgid "doughnut"
+msgstr "donitsi"
+
+msgid "coconut"
+msgstr "kookos"
+
+msgid "rice"
+msgstr "riisi"
+
+msgid "ice cream"
+msgstr ""
+
+msgid "jelly"
+msgstr "hyytelö"
+
+msgid "yoghurt"
+msgstr ""
+
+msgid "dessert"
+msgstr "jälkiruoka"
+
+msgid "pretzel"
+msgstr ""
+
+msgid "peanut"
+msgstr ""
+
+msgid "jam"
+msgstr "hillo"
+
+msgid "feast"
+msgstr "juhla"
+
+msgid "cookie"
+msgstr "keksi"
+
+msgid "bacon"
+msgstr ""
+
+msgid "spice"
+msgstr "mauste"
+
+msgid "coffee"
+msgstr "kahvi"
+
+msgid "pie"
+msgstr "piirakka"
+
+msgid "lemonade"
+msgstr "limonadi"
+
+msgid "chocolate"
+msgstr "suklaa"
+
+msgid "water bottle"
+msgstr ""
+
+msgid "lunch"
+msgstr "lounas"
+
+msgid "ice"
+msgstr "jää"
+
+msgid "sugar"
+msgstr "sokeri"
+
+msgid "sauce"
+msgstr "kastike"
+
+msgid "soup"
+msgstr "keitto"
+
+msgid "juice"
+msgstr "mehu"
+
+msgid "fries"
+msgstr "ranskalaiset"
+
+msgid "cake"
+msgstr "kakku"
+
+msgid "mashed potatoes"
+msgstr ""
+
+msgid "tea"
+msgstr ""
+
+msgid "bun"
+msgstr "pulla"
+
+msgid "cheese"
+msgstr "juusto"
+
+msgid "beef"
+msgstr ""
+
+msgid "sandwich"
+msgstr "voileipä"
+
+msgid "slice"
+msgstr ""
+
+msgid "sprinkle"
+msgstr "nonparelli"
+
+msgid "pizza"
+msgstr "pitsa"
+
+msgid "flour"
+msgstr "jauhot"
+
+msgid "gum"
+msgstr "purukumi"
+
+msgid "spaghetti"
+msgstr "spagetti"
+
+msgid "roast"
+msgstr "paisti"
+
+msgid "stew"
+msgstr "muhennos"
+
+msgid "spread"
+msgstr "levittää"
+
+msgid "meat"
+msgstr "liha"
+
+msgid "milk"
+msgstr "maito"
+
+msgid "meal"
+msgstr "ateria"
+
+msgid "corn"
+msgstr "maissi"
+
+msgid "bread"
+msgstr "leipä"
+
+msgid "walnut"
+msgstr "saksanpähkinä"
+
+msgid "egg"
+msgstr "kananmuna"
+
+msgid "hot dog"
+msgstr ""
+
+msgid "ham"
+msgstr "kinkku"
+
+msgid "jewellery"
+msgstr ""
+
+msgid "sock"
+msgstr "sukka"
+
+msgid "jacket"
+msgstr "takki"
+
+msgid "heel"
+msgstr "kantapää"
+
+msgid "smock"
+msgstr "työtakki"
+
+msgid "shorts"
+msgstr ""
+
+msgid "pocket"
+msgstr "tasku"
+
+msgid "necklace"
+msgstr "kaulakoru"
+
+msgid "sweatshirt"
+msgstr "huppari"
+
+msgid "uniform"
+msgstr "univormu"
+
+msgid "raincoat"
+msgstr "sadetakki"
+
+msgid "trousers"
+msgstr ""
+
+msgid "sunglasses"
+msgstr ""
+
+msgid "coat"
+msgstr "takki"
+
+msgid "pullover"
+msgstr "villapaita"
+
+msgid "shirt"
+msgstr "paita"
+
+msgid "sandals"
+msgstr "sandaalit"
+
+msgid "suit"
+msgstr "puku"
+
+msgid "pyjamas"
+msgstr ""
+
+msgid "skirt"
+msgstr "mekko"
+
+msgid "zip"
+msgstr ""
+
+msgid "shoes"
+msgstr ""
+
+msgid "jewel"
+msgstr "jalokivi"
+
+msgid "tie"
+msgstr ""
+
+msgid "slippers"
+msgstr "tossut"
+
+msgid "gloves"
+msgstr ""
+
+msgid "hat"
+msgstr "hattu"
+
+msgid "sleeve"
+msgstr "hiha"
+
+msgid "cap"
+msgstr "lakki"
+
+msgid "swimming suit"
+msgstr ""
+
+msgid "trainer"
+msgstr ""
+
+msgid "vest"
+msgstr "liivi"
+
+msgid "glasses"
+msgstr "silmälasit"
+
+msgid "shoelace"
+msgstr "kengännauha"
+
+msgid "patch"
+msgstr "paikka"
+
+msgid "scarf"
+msgstr "huivi"
+
+msgid "shoe"
+msgstr "kenkä"
+
+msgid "button"
+msgstr "nappi"
+
+msgid "dress"
+msgstr "puku"
+
+msgid "sash"
+msgstr "liina"
+
+msgid "shoe sole"
+msgstr ""
+
+msgid "robe"
+msgstr "kylpytakki"
+
+msgid "pants"
+msgstr "housut"
+
+msgid "kimono"
+msgstr "kimono"
+
+msgid "overalls"
+msgstr ""
+
+msgid "lick"
+msgstr "nuolla"
+
+msgid "slam"
+msgstr "läimäyttää"
+
+msgid "beg"
+msgstr "rukoilla"
+
+msgid "fell"
+msgstr "kaatua"
+
+msgid "scratch"
+msgstr "raapia"
+
+msgid "touch"
+msgstr "koskea"
+
+msgid "sniff"
+msgstr "nuuhkaista"
+
+msgid "see"
+msgstr "nähdä"
+
+msgid "climb"
+msgstr "nousu"
+
+msgid "dig"
+msgstr "kaivaa"
+
+msgid "howl"
+msgstr "ulvoa"
+
+msgid "sleep"
+msgstr "nukkua"
+
+msgid "explore"
+msgstr "tutkia"
+
+msgid "draw"
+msgstr "piirtää"
+
+msgid "hug"
+msgstr "halata"
+
+msgid "teach"
+msgstr "opettaa"
+
+msgid "nap"
+msgstr "torkkua"
+
+msgid "clay"
+msgstr "savi"
+
+msgid "catch"
+msgstr "ottaa kiinni"
+
+msgid "clap"
+msgstr "taputtaa"
+
+msgid "cry"
+msgstr "itkeä"
+
+msgid "sing"
+msgstr "laulaa"
+
+msgid "meet"
+msgstr "tavata"
+
+msgid "sell"
+msgstr ""
+
+msgid "peck"
+msgstr "nokkia"
+
+msgid "beat"
+msgstr "lyödä"
+
+msgid "kneel"
+msgstr "polvistua"
+
+msgid "find"
+msgstr "löytää"
+
+msgid "dance"
+msgstr "tanssi"
+
+msgid "cough"
+msgstr "yskiä"
+
+msgid "cut"
+msgstr "leikata"
+
+msgid "think"
+msgstr "ajatella"
+
+msgid "bark"
+msgstr "haukkua"
+
+msgid "speak"
+msgstr "puhua"
+
+msgid "cheer"
+msgstr "tervehdys"
+
+msgid "bake"
+msgstr ""
+
+msgid "write"
+msgstr "kirjoittaa"
+
+msgid "punch"
+msgstr ""
+
+msgid "strum"
+msgstr ""
+
+msgid "study"
+msgstr "opiskella"
+
+msgid "plow"
+msgstr "kyntää"
+
+msgid "dream"
+msgstr "nähdä unta"
+
+msgid "post"
+msgstr "lähettää"
+
+msgid "dive"
+msgstr "sukellus"
+
+msgid "whisper"
+msgstr "kuiskata"
+
+msgid "sob"
+msgstr "nyyhkytys"
+
+msgid "shake"
+msgstr "ravistaa"
+
+msgid "feed"
+msgstr "syöttää"
+
+msgid "crawl"
+msgstr "ryömiä"
+
+msgid "camp"
+msgstr "leiri"
+
+msgid "spill"
+msgstr "läikyttää"
+
+msgid "clean"
+msgstr "siivota"
+
+msgid "scream"
+msgstr "kirkua"
+
+msgid "tear"
+msgstr "repiä"
+
+msgid "float"
+msgstr "kellua"
+
+msgid "pull"
+msgstr "vetää"
+
+msgid "ate"
+msgstr ""
+
+msgid "kiss"
+msgstr "suudella"
+
+msgid "sit"
+msgstr "istua"
+
+msgid "hatch"
+msgstr "kuoriutua"
+
+msgid "blink"
+msgstr "räpäyttää"
+
+msgid "hear"
+msgstr "kuulla"
+
+msgid "smooch"
+msgstr "pussata"
+
+msgid "play"
+msgstr "leikkiä"
+
+msgid "wash"
+msgstr "pestä"
+
+msgid "chat"
+msgstr "jutella"
+
+msgid "drive"
+msgstr "ajaa"
+
+msgid "to drink"
+msgstr "juoma"
+
+msgid "fly"
+msgstr "lentää"
+
+msgid "juggle"
+msgstr ""
+
+msgid "bit"
+msgstr "bitti"
+
+msgid "sweep"
+msgstr ""
+
+msgid "look"
+msgstr "katsoa"
+
+msgid "knit"
+msgstr "kutoa"
+
+msgid "lift"
+msgstr "hissi"
+
+msgid "fetch"
+msgstr "noutaa"
+
+msgid "read"
+msgstr "lukea"
+
+msgid "croak"
+msgstr "kurnuttaa"
+
+msgid "stare"
+msgstr "tuijottaa"
+
+msgid "eat"
+msgstr "syödä"
+
+msgid "lighthouse"
+msgstr "majakka"
+
+msgid "door"
+msgstr "ovi"
+
+msgid "circus"
+msgstr "sirkus"
+
+msgid "church"
+msgstr ""
+
+msgid "kennel"
+msgstr ""
+
+msgid "temple"
+msgstr "temppeli"
+
+msgid "smoke"
+msgstr "savu"
+
+msgid "chimney"
+msgstr "savupiippu"
+
+msgid "brick"
+msgstr "tiili"
+
+msgid "well"
+msgstr ""
+
+msgid "street"
+msgstr "katu"
+
+msgid "castle"
+msgstr "linna"
+
+msgid "store"
+msgstr "kauppa"
+
+msgid "staircase"
+msgstr "portaikko"
+
+msgid "school"
+msgstr "koulu"
+
+msgid "farm"
+msgstr "maatila"
+
+msgid "bridge"
+msgstr "silta"
+
+msgid "dam"
+msgstr "pato"
+
+msgid "pyramid"
+msgstr "pyramidi"
+
+msgid "barn"
+msgstr "lato"
+
+msgid "mill"
+msgstr "mylly"
+
+msgid "window"
+msgstr "ikkuna"
+
+msgid "cabin"
+msgstr "hytti"
+
+msgid "step"
+msgstr "porras"
+
+msgid "shop"
+msgstr "kauppa"
+
+msgid "shed"
+msgstr "vaja"
+
+msgid "roof"
+msgstr "katto"
+
+msgid "steeple"
+msgstr "kirkontorni"
+
+msgid "garage"
+msgstr "autotalli"
+
+msgid "mosque"
+msgstr "moskeija"
+
+msgid "hospital"
+msgstr "sairaala"
+
+msgid "tent"
+msgstr "teltta"
+
+msgid "house"
+msgstr "talo"
+
+msgid "wall"
+msgstr "seinä"
+
+msgid "bank"
+msgstr "rinne"
+
+msgid "shutter"
+msgstr "ikkunaluukku"
+
+msgid "hut"
+msgstr "maja"
+
+msgid "land"
+msgstr "maa"
+
+msgid "cliff"
+msgstr "kallio"
+
+msgid "hill"
+msgstr "mäki"
+
+msgid "canyon"
+msgstr "kanjoni"
+
+msgid "rock"
+msgstr "lohkare"
+
+msgid "sea"
+msgstr "meri"
+
+msgid "lake"
+msgstr "järvi"
+
+msgid "coast"
+msgstr "rannikko"
+
+msgid "shore"
+msgstr "ranta"
+
+msgid "mountain"
+msgstr "vuori"
+
+msgid "pond"
+msgstr "lampi"
+
+msgid "peak"
+msgstr "huippu"
+
+msgid "lava"
+msgstr "laava"
+
+msgid "cave"
+msgstr "luola"
+
+msgid "dune"
+msgstr "dyyni"
+
+msgid "island"
+msgstr "saari"
+
+msgid "forest"
+msgstr "metsä"
+
+msgid "desert"
+msgstr "aavikko"
+
+msgid "iceberg"
+msgstr "jäävuori"
+
+msgid "clown"
+msgstr "pelle"
+
+msgid "engineer"
+msgstr "insinööri"
+
+msgid "priest"
+msgstr "pappi"
+
+msgid "vet"
+msgstr "eläinlääkäri"
+
+msgid "judge"
+msgstr "tuomari"
+
+msgid "chef"
+msgstr "kokki"
+
+msgid "athlete"
+msgstr "yleisurheilija"
+
+msgid "librarian"
+msgstr "kirjastonhoitaja"
+
+msgid "juggler"
+msgstr "jonglööri"
+
+msgid "policeman"
+msgstr ""
+
+msgid "plumber"
+msgstr "putkiasentaja"
+
+msgid "badge"
+msgstr "virkamerkki"
+
+msgid "queen"
+msgstr "kuningatar"
+
+msgid "farmer"
+msgstr "maanviljelijä"
+
+msgid "magician"
+msgstr ""
+
+msgid "knight"
+msgstr "ritari"
+
+msgid "doctor"
+msgstr "lääkäri"
+
+msgid "bricklayer"
+msgstr "muurari"
+
+msgid "cleaner"
+msgstr ""
+
+msgid "teacher"
+msgstr "opettaja"
+
+msgid "hunter"
+msgstr "metsästäjä"
+
+msgid "soldier"
+msgstr "sotilas"
+
+msgid "musician"
+msgstr "muusikko"
+
+msgid "lawyer"
+msgstr "juristi"
+
+msgid "fisherman"
+msgstr "kalastaja"
+
+msgid "princess"
+msgstr "prinsessa"
+
+msgid "fireman"
+msgstr "palomies"
+
+msgid "nun"
+msgstr "nunna"
+
+msgid "pirate"
+msgstr "merirosvo"
+
+msgid "cowboy"
+msgstr "cowboy"
+
+msgid "electrician"
+msgstr "sähköasentaja"
+
+msgid "nurse"
+msgstr "sairaanhoitaja"
+
+msgid "king"
+msgstr "kuningas"
+
+msgid "president"
+msgstr "presidentti"
+
+msgid "office worker"
+msgstr ""
+
+msgid "carpenter"
+msgstr "puuseppä"
+
+msgid "jockey"
+msgstr "jockey"
+
+msgid "worker"
+msgstr "työntekijä"
+
+msgid "mechanic"
+msgstr "mekaanikko"
+
+msgid "pilot"
+msgstr "ohjaaja"
+
+msgid "actor"
+msgstr "näyttelijä"
+
+msgid "cook"
+msgstr "keittää"
+
+msgid "student"
+msgstr "opiskelija"
+
+msgid "butcher"
+msgstr "lihakauppias"
+
+msgid "accountant"
+msgstr "kirjanpitäjä"
+
+msgid "prince"
+msgstr "prinssi"
+
+msgid "pope"
+msgstr "paavi"
+
+msgid "sailor"
+msgstr "merimies"
+
+msgid "boxer"
+msgstr "nyrkkeilijä"
+
+msgid "ballet dancer"
+msgstr ""
+
+msgid "coach"
+msgstr "valmentaja"
+
+msgid "astronaut"
+msgstr "avaruuslentäjä"
+
+msgid "painter"
+msgstr ""
+
+msgid "anaesthesiologist"
+msgstr ""
+
+msgid "scientist"
+msgstr ""
+
+msgid "carrot"
+msgstr "porkkana"
+
+msgid "blackberries"
+msgstr ""
+
+msgid "celery"
+msgstr "selleri"
+
+msgid "turnip"
+msgstr "nauris"
+
+msgid "cacao"
+msgstr "kaakao"
+
+msgid "peach"
+msgstr "persikka"
+
+msgid "melon"
+msgstr "meloni"
+
+msgid "grapefruit"
+msgstr "ananas"
+
+msgid "broccoli"
+msgstr "parsakaali"
+
+msgid "grapes"
+msgstr ""
+
+msgid "spinach"
+msgstr "pinaatti"
+
+msgid "fig"
+msgstr "viikuna"
+
+msgid "kernel"
+msgstr "ydin"
+
+msgid "radish"
+msgstr "retiisi"
+
+msgid "tomato"
+msgstr ""
+
+msgid "kiwi"
+msgstr "kiivi"
+
+msgid "asparagus"
+msgstr "parsa"
+
+msgid "olives"
+msgstr ""
+
+msgid "cucumbers"
+msgstr ""
+
+msgid "beans"
+msgstr ""
+
+msgid "strawberry"
+msgstr "mansikka"
+
+msgid "peppers"
+msgstr "pippuri"
+
+msgid "raspberry"
+msgstr "vadelma"
+
+msgid "apricot"
+msgstr "aprikoosi"
+
+msgid "potatoes"
+msgstr ""
+
+msgid "peas"
+msgstr ""
+
+msgid "cabbage"
+msgstr "kaali"
+
+msgid "cherries"
+msgstr ""
+
+msgid "squash"
+msgstr "kurpitsa"
+
+msgid "blueberries"
+msgstr ""
+
+msgid "pear"
+msgstr "päärynä"
+
+msgid "orange"
+msgstr "appelsiini"
+
+msgid "pumpkin"
+msgstr "kurpitsa"
+
+msgid "avocado"
+msgstr "avokado"
+
+msgid "garlic"
+msgstr "valkosipuli"
+
+msgid "onion"
+msgstr "sipuli"
+
+msgid "apple"
+msgstr "omena"
+
+msgid "lime"
+msgstr "limetti"
+
+msgid "cauliflower"
+msgstr "kukkakaali"
+
+msgid "mango"
+msgstr "mango"
+
+msgid "lettuce"
+msgstr "lehtisalaatti"
+
+msgid "lemon"
+msgstr "sitruuna"
+
+msgid "aubergine"
+msgstr ""
+
+msgid "artichokes"
+msgstr ""
+
+msgid "plums"
+msgstr ""
+
+msgid "leek"
+msgstr "purjo"
+
+msgid "bananas"
+msgstr ""
+
+msgid "papaya"
+msgstr "papaija"
+
+msgid "sail"
+msgstr "purje"
+
+msgid "taxi"
+msgstr "taksi"
+
+msgid "car"
+msgstr "auto"
+
+msgid "bike"
+msgstr "polkupyörä"
+
+msgid "raft"
+msgstr "lautta"
+
+msgid "pedal"
+msgstr "poljin"
+
+msgid "bus"
+msgstr "linja-auto"
+
+msgid "handlebar"
+msgstr "kahva"
+
+msgid "boat"
+msgstr "vene"
+
+msgid "truck"
+msgstr "kuorma-auto"
+
+msgid "sleigh"
+msgstr "kelkka"
+
+msgid "carpet"
+msgstr "matto"
+
+msgid "motorcycle"
+msgstr "moottoripyörä"
+
+msgid "train"
+msgstr "juna"
+
+msgid "ship"
+msgstr "laiva"
+
+msgid "van"
+msgstr "pakettiauto"
+
+msgid "canoe"
+msgstr "kanootti"
+
+msgid "rocket"
+msgstr "raketti"
+
+msgid "mast"
+msgstr "masto"
+
+msgid "sledge"
+msgstr ""
+
+msgid "bicycle"
+msgstr ""

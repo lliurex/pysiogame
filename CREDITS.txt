@@ -9,10 +9,17 @@ Usability Testing:
 Windows Setup Script (eduactiv82exe):
     Gino Ingras
 
+Arabic Reshaping Libraries:
+    arabic-reshaper - MIT Licence - Copyright (c) 2019 Abdullah Diab
+    python-bidi - GPLv3 - Development Lead: Meir Kriheli, Contributors: Just van Rossum, Jakub Wilk.
+    ctfribidi - Public Domain - Oleg A. Paraschenko
+
 Translations:
+    Arabic - Ayman Mahmoud
+    Bulgarian - Vanyo Georgiev
     Catalan - Guillem Jover - http://www.hadrons.org/~guillem/
             - updated by Jordi Mallach
-    Bulgarian - Vanyo Georgiev
+    Dutch - Steven Es
     English UK - Ireneusz Imiolek (some corrections needed)
     English US - Ireneusz Imiolek (some corrections needed)
     Finnish - Aapo Rantalainen
@@ -48,6 +55,7 @@ Fonts:
     FreeSans, FreeSansBold - GPL
     LinBiolinum_RBah - LinuxLibertine - GPL - https://sourceforge.net/projects/linuxlibertine/
     KacstOne - KACST holds the copyright of the included Arabic font which is donated under GPL by KACST.
+    NotoSerifMalayalam - OFL - https://scripts.sil.org/cms/scripts/page.php?item_id=OFL-FAQ_web#b2e49b82
 
 Sounds Licence - Public Domain:
     Most of the sounds were created with help of: http://www.superflashbros.net/as3sfxr/ these are being released under Public Domain licence:
@@ -375,9 +383,15 @@ Images for new icons:
 
 New images in eduActiv8:
     https://openclipart.org/detail/95431/star
+    http://www.clker.com/clipart-90047.html
 
 Wikipedia images:
     http://de.wikipedia.org/wiki/Datei:Koala.svg
+    
+Other images:
+    https://publicdomainvectors.org/en/free-clipart/Gold-vector-image/2847.html
+    https://publicdomainvectors.org/en/free-clipart/Sealed-envelope-vector-image/8256.html
+    
 
 Laby code based on:
     Laby, 2010 by Mehdi Cherti(mehdidc):

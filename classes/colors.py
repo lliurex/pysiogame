@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import random
 import classes.extras as ex
 import copy
-
-
 
 
 class Color:
@@ -120,6 +117,9 @@ class Color:
 
     def update_info_color(self, h, s, v):
         self.info_buttons_col = ex.hsv_to_rgb(h, s, v)
+
+    def get_interface_hue(self):
+        return self.color_sliders[5][0] * 16
 
 
 class WBScheme:

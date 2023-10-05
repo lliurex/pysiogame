@@ -38,7 +38,7 @@ class Key(pygame.sprite.Sprite):
         self.font_1 = self.kbrd.kbrd_font[0]
         self.font_2 = self.kbrd.kbrd_font[1]
 
-        self.image = pygame.Surface([self.w, self.h])
+        self.image = pygame.Surface((self.w, self.h))
 
         self.rect = self.image.get_rect()
         self.rect.topleft = [self.x, self.y]
@@ -152,7 +152,7 @@ class KeyBoard:
                                                (int(float(self.points) / 2))))
         self.kbrd_font.append(pygame.font.Font(os.path.join('res', 'fonts', 'FreeSans', 'FreeSansBold.ttf'),
                                                (int(float(self.points) / 3))))
-        self.canvas = pygame.Surface([kbrd_w, kbrd_h])
+        self.canvas = pygame.Surface((kbrd_w, kbrd_h))
         self.canvas.fill(self.game_board.bg_col)
         self.add_keys()
         self.draw_hands()
@@ -489,8 +489,8 @@ class Board(gd.BoardGame):
                                             "press the Shift key continuously.")
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
-        if self.show_msg == False:
+        gd.BoardGame.handle(self, event)
+        if not self.show_msg:
             if event.type == pygame.KEYDOWN and event.key == pygame.K_CAPSLOCK:
                 self.kbrd.get_btns_to_hl(self.middle.value)
             if event.type == pygame.KEYDOWN and event.key != pygame.K_RETURN:
@@ -520,7 +520,7 @@ class Board(gd.BoardGame):
         self.kbrd.update()
         self.board.units[3].painting = self.kbrd.canvas.copy()
         self.board.units[3].update_me = True
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def check_entry(self):
         if self.line < len(self.t_string) - 1:

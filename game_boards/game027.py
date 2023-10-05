@@ -78,7 +78,7 @@ class Board(gd.BoardGame):
         for each in self.singular_items:
             caption = self.lang._n(each, 1)
             if not self.lang.ltr_text:
-                caption = ex.reverse(self.lang._n(each, 1), self.lang.alpha, self.lang.lang)
+                caption = ex.reverse(self.lang._n(each, 1), self.lang.lang)
             if caption is None:
                 caption = ""
             self.img_captions.append(caption)
@@ -115,7 +115,7 @@ class Board(gd.BoardGame):
             ind = self.chosen_items[0][i]
             caption = self.lang._n(self.singular_items[ind], self.chosen_items[1][i])
             if not self.lang.ltr_text:
-                caption = ex.reverse(caption, self.lang.alpha, self.lang.lang)
+                caption = ex.reverse(caption, self.lang.lang)
             if caption is None:
                 caption = ""
             self.board.add_unit(l[0], i + 1, 1, 1, classes.board.Label, str(self.chosen_items[1][i]) + " ", white, "",
@@ -161,6 +161,7 @@ class Board(gd.BoardGame):
                 self.board.ships[-1].audible = False
                 self.board.ships[-1].speaker_val = self.img_pcaptions[i]
                 self.board.ships[-1].speaker_val_update = False
+                self.board.ships[-1].item_code = items[i]
                 self.units.append(self.board.ships[-1])
         self.board.all_sprites_list.move_to_front(self.board.units[0])
 
@@ -168,7 +169,7 @@ class Board(gd.BoardGame):
         self.mainloop.dialog.show_dialog(3, self.d["Check the shopping list"])
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
         if event.type == pygame.MOUSEBUTTONUP:
             for each in self.board.units:
                 if each.is_door is True:
@@ -196,7 +197,7 @@ class Board(gd.BoardGame):
         for i in range(len(self.items)):
             count = 0
             for each in purchased:
-                if each.value == self.img_captions[i]:  # self.items[i]:
+                if each.item_code == self.items[i]:
                     count += 1
             if count > 0:
                 result[str(i)] = count

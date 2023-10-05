@@ -147,7 +147,7 @@ class Board(gd.BoardGame):
         self.canv = []
         for i in range(4):
             self.canv.append(
-                pygame.Surface([self.canvas.grid_w * self.board.scale, self.canvas.grid_h * self.board.scale - 1]))
+                pygame.Surface((self.canvas.grid_w * self.board.scale, self.canvas.grid_h * self.board.scale - 1)))
 
         self.board.all_sprites_list.move_to_back(self.board.board_bg)
         self.mix()
@@ -237,7 +237,7 @@ class Board(gd.BoardGame):
         self.mix()
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
         if event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
             self.auto_check_reset()
 
@@ -247,7 +247,7 @@ class Board(gd.BoardGame):
 
     def update(self, game):
         game.fill((0, 0, 0))
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def check_result(self):
         r = self.rgbx3[0][0]

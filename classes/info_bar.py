@@ -44,7 +44,7 @@ class BaseButton(pygame.sprite.Sprite):
             self.font4 = self.panel.fonts[3]
 
     def update_size(self, width, height):
-        self.image = pygame.Surface([width, height], flags=pygame.SRCALPHA)
+        self.image = pygame.Surface((width, height), flags=pygame.SRCALPHA)
         self.image.fill(self.color)
         self.rect = self.image.get_rect()
         self.rect.topleft = self.pos
@@ -169,6 +169,7 @@ class InfoBar:
         self.game_board = None
         self.home_btns_w = 50 + 66
         self.last_hover = None
+        self.fonts = []
         self.create()
 
     def create(self):
@@ -309,13 +310,23 @@ class InfoBar:
                 if btn is not None:
                     if btn.btn_id == 11:
                         self.show_menu(True)
+                    elif btn.btn_id == 3 or btn.btn_id == 8:
+                        if self.level.lvl < self.level.lvl_count:
+                            self.level.lvl = self.level.lvl_count
+                            btn.img = btn.img_2
+                            self.level.load_level()
+                    elif btn.btn_id == 1 or btn.btn_id == 7:
+                        if self.level.lvl > 1:
+                            self.level.lvl = 1
+                            btn.img = btn.img_2
+                            self.level.load_level()
 
         elif event.type == pygame.MOUSEMOTION:
             self.on_mouse_over()
             if self.mainloop.info.title != self.mainloop.m.games[self.mainloop.m.active_game_id].title:
                 self.reset_titles()
-            if self.hidden == True:
-                if self.close_dialog == False:
+            if self.hidden:
+                if not self.close_dialog:
                     self.buttons_restore()
             pos = event.pos
             btn = self.hover(pos, layout)
@@ -384,7 +395,7 @@ class InfoBar:
         self.realign()
 
     def reset_titles(self):
-        if self.close_dialog == False:
+        if not self.close_dialog:
             # book 1
             if self.mainloop.m.game_constructor != "game000.Board":
                 self.title = self.mainloop.m.games[self.mainloop.m.active_game_id].title

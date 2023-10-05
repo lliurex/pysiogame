@@ -10,6 +10,7 @@ import classes.game_driver as gd
 import classes.level_controller as lc
 import classes.drw.clock
 
+
 class Board(gd.BoardGame):
     def __init__(self, mainloop, speaker, config, screen_w, screen_h):
         self.level = lc.Level(self, mainloop, 3, 16)
@@ -28,16 +29,12 @@ class Board(gd.BoardGame):
                 self.colon_col = (255, 255, 255)
             else:
                 self.colon_col = (0, 0, 0)
-
             self.h_col = self.mainloop.scheme.color3
             self.m_col = self.mainloop.scheme.color4
-
         else:
             self.colon_col = (0, 0, 0)
             self.h_col = ex.hsv_to_rgb(225, 190, 220)
             self.m_col = ex.hsv_to_rgb(170, 190, 220)
-
-        white = (255, 255, 255)
 
         color1 = ex.hsv_to_rgb(225, 70, 230)
         color3 = ex.hsv_to_rgb(225, 255, 255)
@@ -80,7 +77,7 @@ class Board(gd.BoardGame):
             m_pool = [0]
         elif self.level.lvl == 7:
             data = [4, 2, True, True, True, False, False, True, False, True, True, 15]
-            h_pool = range(13, 24)
+            h_pool = list(range(13, 24))
             h_pool.append(0)
             m_pool = range(0, 60, 5)
         elif self.level.lvl == 8:

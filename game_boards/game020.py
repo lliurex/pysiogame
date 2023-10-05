@@ -30,6 +30,7 @@ class Board(gd.BoardGame):
             self.color2 = ex.hsv_to_rgb(h, 255, 170)  # contours & borders
             self.font_color = ex.hsv_to_rgb(h, 255, 100)
         else:
+            h = 170
             self.font_color = self.mainloop.scheme.u_font_color  # ex.hsv_to_rgb(h,255,100)
             if self.mainloop.scheme.dark:
                 self.bg_col = (0, 0, 1)
@@ -179,7 +180,7 @@ class Board(gd.BoardGame):
                          [center[0] + size // 7, center[1] - lh // 2 + la], lh)
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
         if event.type == pygame.MOUSEBUTTONUP:
             for each in self.board.units:
                 if each.is_door is True:
@@ -195,7 +196,7 @@ class Board(gd.BoardGame):
 
     def update(self, game):
         game.fill(self.bg_col)
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def auto_check_reset(self):
         for each in self.board.ships:
@@ -214,7 +215,7 @@ class Board(gd.BoardGame):
                     self.expression[self.board.ships[i].grid_x] = value
             eval_string = ''.join(self.expression)
             eval_string.strip()
-            if eval(eval_string) == True:
+            if eval(eval_string):
                 self.level.next_board()
                 if found is not None:
                     found.set_display_check(True)

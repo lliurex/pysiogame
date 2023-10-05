@@ -9,6 +9,7 @@ import classes.game_driver as gd
 import classes.level_controller as lc
 import classes.extras as ex
 
+
 class Board(gd.BoardGame):
     def __init__(self, mainloop, speaker, config, screen_w, screen_h):
         self.level = lc.Level(self, mainloop, 2, 2)
@@ -20,7 +21,6 @@ class Board(gd.BoardGame):
 
         if self.mainloop.scheme is not None:
             white = self.mainloop.scheme.u_color
-
             h1 = 170
             h2 = 40
             color1 = ex.hsv_to_rgb(h1, 255, 255)
@@ -29,7 +29,6 @@ class Board(gd.BoardGame):
             bd_color2 = ex.hsv_to_rgb(h2, 127, 155)
         else:
             white = (255, 255, 255)
-
             h1 = random.randrange(0, 255, 5)
             h2 = (h1 + 128) % 255
             color1 = ex.hsv_to_rgb(h1, 150, 255)
@@ -48,8 +47,6 @@ class Board(gd.BoardGame):
         self.layout.update_layout(data[0], data[1])
         scale = self.layout.scale
         self.board.level_start(data[0], data[1], scale)
-        # self.board.board_bg.initcolor = color
-        # self.board.board_bg.color = color
         self.board.board_bg.update_me = True
 
         self.board.board_bg.line_color = (20, 20, 20)
@@ -58,10 +55,10 @@ class Board(gd.BoardGame):
         num1 = random.randint(1, num2-1)
         self.numbers = [num1, num2]
 
-
         self.board.add_unit(0, 0, data[1], data[1], classes.board.Label, "", white, "", 0)
         self.fraction_canvas = self.board.units[-1]
-        self.fraction = classes.drw.fraction_hq.Fraction(1, self.board.scale * data[1], color1, color2, bd_color1, bd_color2, self.numbers, 2)
+        self.fraction = classes.drw.fraction_hq.Fraction(1, self.board.scale * (data[1]), color1, color2, bd_color1,
+                                                         bd_color2, self.numbers, 2)
         self.fraction_canvas.painting = self.fraction.get_canvas().copy()
 
         self.board.add_unit(data[1], 1, 6, 1, classes.board.Label, self.d["numerator"], white, "", 2)
@@ -69,6 +66,12 @@ class Board(gd.BoardGame):
 
         self.board.add_unit(data[1], 7, 6, 1, classes.board.Label, self.d["denominator"], white, "", 2)
         self.board.units[-1].font_color = bd_color2
+
+        s = ["", self.lang.fract2str(num1, num2)]
+        self.board.add_door(0, data[1] - 1, data[1], 1, classes.board.Label, s, (0, 0, 0, 0), "", 4, alpha=True)
+
+        self.board.units[-1].font_color = bd_color1
+        self.string_fract = self.board.units[-1]
 
         self.board.add_unit(data[1], 2, 2, 2, classes.board.ImgCenteredShip, "", transp,
                             img_src='nav_l_mts.png', alpha=True)
@@ -88,6 +91,7 @@ class Board(gd.BoardGame):
                             img_src='nav_l_mts.png', alpha=True)
         self.board.ships[-1].set_tint_color(bd_color2)
 
+
         self.board.add_unit(data[1] + 2, 5, 2, 2, classes.board.Label, str(num2), white, "", 31)
         self.nm2 = self.board.units[-1]
         self.board.units[-1].font_color = bd_color2
@@ -101,7 +105,7 @@ class Board(gd.BoardGame):
             each.immobilize()
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
             active = self.board.active_ship
             if active == 0:
@@ -112,7 +116,6 @@ class Board(gd.BoardGame):
                 self.change_fract_btn(0, -1)
             elif active == 3:
                 self.change_fract_btn(0, 1)
-
 
     def change_fract_btn(self, n1, n2):
         if n1 == -1:
@@ -152,16 +155,15 @@ class Board(gd.BoardGame):
 
         self.nm1.set_value(str(self.numbers[0]))
         self.nm2.set_value(str(self.numbers[1]))
+        self.string_fract.set_value(["", self.lang.fract2str(self.numbers[0], self.numbers[1])])
         self.fraction.update_values(self.numbers)
         self.fraction_canvas.painting = self.fraction.get_canvas().copy()
         self.fraction_canvas.update_me = True
         self.mainloop.redraw_needed[0] = True
 
-
-
     def update(self, game):
         game.fill((255, 255, 255))
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def check_result(self):
         pass

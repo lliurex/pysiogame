@@ -1,8 +1,8 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # eduActiv8 - Educational Activities for Kids
-# Copyright (C) 2012-2019  Ireneusz Imiolek
+# Copyright (C) 2012-2022  Ireneusz Imiolek
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -31,6 +31,7 @@
 
 # Import the android module. If we can't import it, set it to None - this
 # lets us test it, and check to see if we want android-specific behavior.
+__version__ = "4.22.11"
 try:
     import android
 except ImportError:
@@ -59,6 +60,8 @@ import classes.score_bar
 import classes.dialogwnd
 import classes.updater
 import classes.sizer
+
+# import stresstest
 
 # setting the working directory to the directory of this file
 path = os.path.abspath(os.path.dirname(sys.argv[0]))
@@ -177,20 +180,20 @@ class GamePlay:
 
     def on_resize(self, size, info):
         if android is None:
-            repost = False
+            # repost = False
             if size[0] < self.config.size_limits[0]:
                 size[0] = self.config.size_limits[0]
-                repost = True
+                # repost = True
             if size[0] > self.config.size_limits[2]:
                 size[0] = self.config.size_limits[2]
-                repost = True
+                # repost = True
 
             if size[1] < self.config.size_limits[1]:
                 size[1] = self.config.size_limits[1]
-                repost = True
+                # repost = True
             if size[1] > self.config.size_limits[3]:
                 size[1] = self.config.size_limits[3]
-                repost = True
+                # repost = True
 
             if size != self.fs_size or self.config.platform == "macos":
                 self.wn_size = size[:]
@@ -258,7 +261,7 @@ class GamePlay:
             self.scheme = eval("classes.colors.%sScheme()" % scheme)
         self.info.create()
         self.fs_rescale(self.info)
-        #self.m.lang_change()
+        # self.m.lang_change()
         self.game_board.line_color = self.game_board.board.board_bg.line_color
 
         if scheme is None:
@@ -376,14 +379,16 @@ class GamePlay:
                                 self.config.settings["screenh"] <= self.config.size_limits[3]:
                     self.wn_size = [self.config.settings["screenw"], self.config.settings["screenh"]]
                 else:
-                    self.wn_size = [min(self.config.fs_width - self.config.os_panels_w, self.config.size_limits[2]),
-                                    min(self.config.fs_height - self.config.os_panels_h, self.config.size_limits[3])]
+                    # set default screen size - as small as possible
+                    #self.wn_size = [min(self.config.fs_width - self.config.os_panels_w, self.config.size_limits[2]),
+                    #                min(self.config.fs_height - self.config.os_panels_h, self.config.size_limits[3])]
+                    self.wn_size = [800, 600]
                     self.config.settings["screenw"] = self.wn_size[0]
                     self.config.settings["screenh"] = self.wn_size[1]
 
                 self.fs_size = [self.config.fs_width, self.config.fs_height]
 
-                if self.config.fullscreen == True:
+                if self.config.fullscreen:
                     self.size = self.fs_size[:]
                     flag = pygame.FULLSCREEN
                 else:
@@ -435,9 +440,21 @@ class GamePlay:
 
                 self.dialog = classes.dialogwnd.DialogWnd(self)
 
+                # recreate the icon
+                icon = pygame.image.load(os.path.join('res', 'icon', 'ico256.png'))
+                pygame.display.set_icon(icon)
+
+                new_size = self.size[:]
+                resizing = False
+                frames_since_resize = 0
+
                 # -------- Main Program Loop ----------- #
                 wait = False
                 while self.done is False:
+                    # uncomment the following line to test all activities across multiple languages as specified in the stresstest.py
+                    # stresstest.step(self)
+
+                    resizing_this_frame = False
                     if android is not None:
                         if android.check_pause():
                             wait = True
@@ -490,13 +507,20 @@ class GamePlay:
                         for event in pygame.event.get():
                             if event.type == pygame.QUIT or (
                                     event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
-                                self.dialog.show_dialog(0, self.lang.d["Do you want to exit the game?"])
+                                self.done = True
+                                self.done4good = True
+                                # don't show dialog if closing with window manager or ESC
+                                # self.dialog.show_dialog(0, self.lang.d["Do you want to exit the game?"])
                             elif event.type == pygame.VIDEORESIZE:
-                                if self.config.fullscreen == False:
-                                    self.on_resize(list(event.size), info)
+                                if not self.config.fullscreen:
+                                    new_size = list(event.size)
+                                    resizing = True
+                                    resizing_this_frame = True
                             elif event.type == pygame.KEYDOWN and event.key == pygame.K_f and (
                                         event.mod & pygame.KMOD_LCTRL):
-                                self.fullscreen_toggle(info)
+                                # eduActiv8 crashes in fullscreen mode in pygame 2 so temporarily not available
+                                if pygame.version.vernum[0] < 2:
+                                    self.fullscreen_toggle(info)
                             elif event.type == pygame.KEYDOWN and event.key == pygame.K_F5:  # refresh - reload level
                                 self.game_board.level.load_level()
                             elif event.type == pygame.KEYDOWN and event.key == pygame.K_F8:
@@ -569,9 +593,19 @@ class GamePlay:
                                 else:
                                     # let the game handle other events
                                     self.game_board.handle(event)
+                        if resizing:
+                            # changed the window resizing behaviour:
+                            # only resize contents 15 frames after the user stopped resizing
+                            if not resizing_this_frame:
+                                frames_since_resize += 1
+                                if frames_since_resize > 15:
+                                    self.on_resize(new_size, info)
+                                    resizing = False
+                                    frames_since_resize = 0
+                            else:
+                                frames_since_resize = 0
 
                         # checking if any of the subsurfaces need updating and updating them if needed
-
                         if self.redraw_needed[1]:
                             info.draw(self.info_bar)
                             self.redraw_needed[1] = False

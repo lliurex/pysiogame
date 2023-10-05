@@ -1,0 +1,1773 @@
+# eduActiv8 - word lists - translation file.
+# Copyright (C) 2019 Ireneusz Imiolek
+# This file is part of the eduActiv8 project and is distributed under GPLv3 licence.
+# 
+# Translators:
+# ayman mahmoud <aimen.riyadh@gmail.com>, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 4.19.01\n"
+"Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
+"Last-Translator: ayman mahmoud <aimen.riyadh@gmail.com>, 2020\n"
+"Language-Team: Arabic (https://www.transifex.com/eduactiv8/teams/94947/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+msgid "cow"
+msgstr "البقرة"
+
+msgid "turkey"
+msgstr "الديك الرومى"
+
+msgid "shrimp"
+msgstr "الجمبرى"
+
+msgid "wolf"
+msgstr "الذئب"
+
+msgid "panther"
+msgstr "النمر"
+
+msgid "panda"
+msgstr "الباندا"
+
+msgid "magpie"
+msgstr "غراب العقعق"
+
+msgid "clam"
+msgstr "سمك البطلينوس"
+
+msgid "pony"
+msgstr "مهر ابن الفرس"
+
+msgid "mouse"
+msgstr "فار"
+
+msgid "pug"
+msgstr "كلب"
+
+msgid "koala"
+msgstr "كوالا"
+
+msgid "frog"
+msgstr "ضفدعة"
+
+msgid "ladybug"
+msgstr "الدعسوقة"
+
+msgid "gorilla"
+msgstr "الغوريلا"
+
+msgid "llama"
+msgstr "اللاما"
+
+msgid "vulture"
+msgstr "النسر"
+
+msgid "hamster"
+msgstr "الهامستر"
+
+msgid "bird"
+msgstr "طائر"
+
+msgid "starfish"
+msgstr "نجم البحر"
+
+msgid "crow"
+msgstr "الغراب"
+
+msgid "parakeet"
+msgstr "الببغاء"
+
+msgid "caterpillar"
+msgstr "اليرقة"
+
+msgid "tiger"
+msgstr "النمر"
+
+msgid "hummingbird"
+msgstr "الطائر الطنان"
+
+msgid "piranha"
+msgstr "سمك البيرانا"
+
+msgid "pig"
+msgstr "الخنزير"
+
+msgid "scorpion"
+msgstr "العقرب"
+
+msgid "fox"
+msgstr "الثعلب"
+
+msgid "leopard"
+msgstr "الفهد"
+
+msgid "iguana"
+msgstr "سحلية الاجوانا"
+
+msgid "dolphin"
+msgstr "الدولفين"
+
+msgid "bat"
+msgstr "الخفاش"
+
+msgid "chick"
+msgstr "الكتكوت"
+
+msgid "crab"
+msgstr "كابوريا / سلطعون"
+
+msgid "hen"
+msgstr "الدجاجة"
+
+msgid "wasp"
+msgstr "الدبور"
+
+msgid "chameleon"
+msgstr "الحرباء"
+
+msgid "whale"
+msgstr "الحوت"
+
+msgid "hedgehog"
+msgstr "القنفذ"
+
+msgid "fawn"
+msgstr "صغير الغزالة"
+
+msgid "moose"
+msgstr "الموظ"
+
+msgid "bee"
+msgstr "النحلة"
+
+msgid "viper"
+msgstr "الافعى"
+
+msgid "shrike"
+msgstr "عصفور شرايك"
+
+msgid "donkey"
+msgstr "الحمار"
+
+msgid "guinea pig"
+msgstr "خنزير غينيا"
+
+msgid "sloth"
+msgstr "الكسلان"
+
+msgid "horse"
+msgstr "الحصان"
+
+msgid "penguin"
+msgstr "البطريق"
+
+msgid "otter"
+msgstr "القندس"
+
+msgid "bear"
+msgstr "الدب"
+
+msgid "zebra"
+msgstr "الحمار الوحشى"
+
+msgid "ostrich"
+msgstr "النعامة"
+
+msgid "camel"
+msgstr "الجمل"
+
+msgid "antelope"
+msgstr "الظبى"
+
+msgid "lemur"
+msgstr "الليمور"
+
+msgid "pigeon"
+msgstr "الحمامة"
+
+msgid "lama"
+msgstr "اللاما"
+
+msgid "mole"
+msgstr "خلد الماء"
+
+msgid "ray"
+msgstr "شعاع"
+
+msgid "ram"
+msgstr "كبش"
+
+msgid "skunk"
+msgstr "الظربان"
+
+msgid "jellyfish"
+msgstr "قنديل البحر"
+
+msgid "sheep"
+msgstr "الخروف"
+
+msgid "shark"
+msgstr "سمك القرش"
+
+msgid "kitten"
+msgstr "قطة صغيرة"
+
+msgid "deer"
+msgstr "الغزال"
+
+msgid "snail"
+msgstr "الحلزون"
+
+msgid "flamingo"
+msgstr "الفلامنجو"
+
+msgid "rabbit"
+msgstr "الارنب"
+
+msgid "oyster"
+msgstr "المحار"
+
+msgid "beaver"
+msgstr "السمور"
+
+msgid "sparrow"
+msgstr "العصفور"
+
+msgid "dove"
+msgstr "الحمامة"
+
+msgid "eagle"
+msgstr "الصقر"
+
+msgid "beetle"
+msgstr "الخنفساء"
+
+msgid "hippopotamus"
+msgstr "فرس النهر"
+
+msgid "owl"
+msgstr "البومة"
+
+msgid "cobra"
+msgstr "افعى الكوبرا"
+
+msgid "salamander"
+msgstr "السلمندر"
+
+msgid "goose"
+msgstr "الاوزة"
+
+msgid "kangaroo"
+msgstr "الكانجرو"
+
+msgid "dragonfly"
+msgstr "اليعسوب"
+
+msgid "toad"
+msgstr "الضفدع"
+
+msgid "pelican"
+msgstr "البجع"
+
+msgid "squid"
+msgstr "الحبار"
+
+msgid "lion cub"
+msgstr "شبل الاسد"
+
+msgid "jaguar"
+msgstr "النمر المرقط"
+
+msgid "duck"
+msgstr "البطة"
+
+msgid "lizard"
+msgstr "السحلية"
+
+msgid "rhinoceros"
+msgstr "وحيد القرن"
+
+msgid "hyena"
+msgstr "الضبع"
+
+msgid "ox"
+msgstr "الثور"
+
+msgid "peacock"
+msgstr "الطاووس"
+
+msgid "parrot"
+msgstr "الببغاء"
+
+msgid "elk"
+msgstr "ايل / ظبى"
+
+msgid "alligator"
+msgstr "التمساح"
+
+msgid "ant"
+msgstr "النملة"
+
+msgid "goat"
+msgstr "عنزة"
+
+msgid "baby rabbit"
+msgstr "صغير الارنب"
+
+msgid "lion"
+msgstr "الاسد"
+
+msgid "squirrel"
+msgstr "السنجاب"
+
+msgid "opossum"
+msgstr "الابوسوم"
+
+msgid "chimp"
+msgstr "الشمبانزى"
+
+msgid "doe"
+msgstr "الظبية"
+
+msgid "gopher"
+msgstr "سلحفاة"
+
+msgid "elephant"
+msgstr "الفيل"
+
+msgid "giraffe"
+msgstr "الزرافة"
+
+msgid "spider"
+msgstr "العنكبوت"
+
+msgid "puppy"
+msgstr "الجرو"
+
+msgid "jay"
+msgstr "ابوزريق"
+
+msgid "seal"
+msgstr "الفقمة"
+
+msgid "rooster"
+msgstr "الديك"
+
+msgid "turtle"
+msgstr "السلحفاة"
+
+msgid "bull"
+msgstr "الثور"
+
+msgid "cat"
+msgstr "القطة"
+
+msgid "rat"
+msgstr "الفأر"
+
+msgid "slug"
+msgstr "الحلزون"
+
+msgid "buffalo"
+msgstr "الثور الامريكى"
+
+msgid "blackbird"
+msgstr "الشحرور"
+
+msgid "swan"
+msgstr "الاوز العراقى"
+
+msgid "lobster"
+msgstr "سرطان البحر"
+
+msgid "dog"
+msgstr "الكلب"
+
+msgid "mosquito"
+msgstr "الناموس"
+
+msgid "snake"
+msgstr "الثعبان"
+
+msgid "chicken"
+msgstr "الدجاجة"
+
+msgid "anteater"
+msgstr "آكل النمل"
+
+msgid "judo"
+msgstr "الجودو"
+
+msgid "pool"
+msgstr "حمام السباحة"
+
+msgid "ride"
+msgstr "يركب"
+
+msgid "stretch"
+msgstr "مد/ مط"
+
+msgid "helmet"
+msgstr "الخوذة"
+
+msgid "ice skating"
+msgstr "التزحلق على الجليد"
+
+msgid "walk"
+msgstr "المشى"
+
+msgid "run"
+msgstr "الجرى"
+
+msgid "swim"
+msgstr "السباحة"
+
+msgid "hop"
+msgstr "القفز"
+
+msgid "hike"
+msgstr "التنزه"
+
+msgid "boxing"
+msgstr "الملاكمة"
+
+msgid "hockey"
+msgstr "الهوكى"
+
+msgid "race"
+msgstr "سباق"
+
+msgid "throw"
+msgstr "رمى"
+
+msgid "skate"
+msgstr "التزلج"
+
+msgid "win"
+msgstr "الفوز"
+
+msgid "squat"
+msgstr "ربض"
+
+msgid "ski"
+msgstr "تزلج"
+
+msgid "golf"
+msgstr "الجولف"
+
+msgid "whistle"
+msgstr "الصفارة"
+
+msgid "torch"
+msgstr "شعلة"
+
+msgid "sailing"
+msgstr "الابحار"
+
+msgid "stand"
+msgstr "وقف"
+
+msgid "tennis"
+msgstr "التنس"
+
+msgid "jump"
+msgstr "القفز"
+
+msgid "rowing"
+msgstr "التجديف"
+
+msgid "jog"
+msgstr "الهرولة"
+
+msgid "rope"
+msgstr "الحبل"
+
+msgid "teeth"
+msgstr "أسنان"
+
+msgid "cheek"
+msgstr "الخد"
+
+msgid "ankle"
+msgstr "الكاحل"
+
+msgid "knee"
+msgstr "الركبة"
+
+msgid "toe"
+msgstr "اصبع قدم"
+
+msgid "muscle"
+msgstr "العضلة"
+
+msgid "mouth"
+msgstr "الفم"
+
+msgid "feet"
+msgstr "الاقدام"
+
+msgid "hand"
+msgstr "اليد"
+
+msgid "elbow"
+msgstr "الكوع"
+
+msgid "hair"
+msgstr "الشعر"
+
+msgid "eyelash"
+msgstr "رمش العين"
+
+msgid "beard"
+msgstr "الذقن"
+
+msgid "belly button"
+msgstr "سرة البطن"
+
+msgid "thumb"
+msgstr "الابهام"
+
+msgid "breast"
+msgstr "الثدى"
+
+msgid "nostril"
+msgstr "فتحة الانف"
+
+msgid "nose"
+msgstr "الانف"
+
+msgid "hip"
+msgstr "الورك"
+
+msgid "arm"
+msgstr "الذراع"
+
+msgid "eyebrow"
+msgstr "الحاجب"
+
+msgid "fist"
+msgstr "القبضة"
+
+msgid "neck"
+msgstr "الرقبة"
+
+msgid "wrist"
+msgstr "المعصم"
+
+msgid "throat"
+msgstr "الحلق"
+
+msgid "eye"
+msgstr "العين"
+
+msgid "leg"
+msgstr "الساق"
+
+msgid "spine"
+msgstr "العمود الفقرى"
+
+msgid "ear"
+msgstr "الاذن"
+
+msgid "finger"
+msgstr "اصبع اليد"
+
+msgid "foot"
+msgstr "القدم"
+
+msgid "braid"
+msgstr "جديلة شعر"
+
+msgid "face"
+msgstr "الوجه"
+
+msgid "back"
+msgstr "الظهر"
+
+msgid "chin"
+msgstr "الذقن"
+
+msgid "bottom"
+msgstr "القاع"
+
+msgid "thigh"
+msgstr "الفخذ"
+
+msgid "belly"
+msgstr "الخصر"
+
+msgid "girl"
+msgstr "الفتاة"
+
+msgid "male"
+msgstr "الذكر"
+
+msgid "son"
+msgstr "الابن"
+
+msgid "mates"
+msgstr "الاصحاب"
+
+msgid "friends"
+msgstr "الاصدقاء"
+
+msgid "baby"
+msgstr "الرضيع"
+
+msgid "child"
+msgstr "الطفل"
+
+msgid "dad"
+msgstr "الاب"
+
+msgid "mom"
+msgstr "الأم"
+
+msgid "twin boys"
+msgstr "توأم أولاد"
+
+msgid "brothers"
+msgstr "الاخوة"
+
+msgid "man"
+msgstr "الانسان"
+
+msgid "mother"
+msgstr "الام"
+
+msgid "grandfather"
+msgstr "الجد"
+
+msgid "family"
+msgstr "العائلة"
+
+msgid "female"
+msgstr "الأنثى"
+
+msgid "wife"
+msgstr "الزوجة"
+
+msgid "husband"
+msgstr "الزوج"
+
+msgid "bride"
+msgstr "العروس"
+
+msgid "madam"
+msgstr "السيدة"
+
+msgid "grandmother"
+msgstr "الجدة"
+
+msgid "couple"
+msgstr "زوج"
+
+msgid "lad"
+msgstr "الفتى"
+
+msgid "twin girls"
+msgstr "توأم فتيات"
+
+msgid "tribe"
+msgstr "القبيلة"
+
+msgid "boy"
+msgstr "الولد"
+
+msgid "sisters"
+msgstr "الأخوات"
+
+msgid "woman"
+msgstr "المرأة"
+
+msgid "lady"
+msgstr "السيدة"
+
+msgid "candy"
+msgstr "الحلوى"
+
+msgid "sausage"
+msgstr "النقانق"
+
+msgid "hamburger"
+msgstr "الهامبرغر"
+
+msgid "steak"
+msgstr "شريحة لحم"
+
+msgid "fudge"
+msgstr "حلوى"
+
+msgid "doughnut"
+msgstr "الدونات"
+
+msgid "coconut"
+msgstr "جوز الهند"
+
+msgid "rice"
+msgstr "الارز"
+
+msgid "ice cream"
+msgstr "الايس كريم"
+
+msgid "jelly"
+msgstr "الجيلى"
+
+msgid "yoghurt"
+msgstr "الزبادى"
+
+msgid "dessert"
+msgstr "الحلويات"
+
+msgid "pretzel"
+msgstr "كعك مملح"
+
+msgid "peanut"
+msgstr "الفول السودانى"
+
+msgid "jam"
+msgstr "المربى"
+
+msgid "feast"
+msgstr "وليمة"
+
+msgid "cookie"
+msgstr "بسكويت"
+
+msgid "bacon"
+msgstr "لحم خنزير مقدد"
+
+msgid "spice"
+msgstr "بهار"
+
+msgid "coffee"
+msgstr "قهوة"
+
+msgid "pie"
+msgstr "فطيرة"
+
+msgid "lemonade"
+msgstr "الليمون"
+
+msgid "chocolate"
+msgstr "الشيكولاته"
+
+msgid "water bottle"
+msgstr "زجاجة مياة"
+
+msgid "lunch"
+msgstr "الغذاء"
+
+msgid "ice"
+msgstr "الثلج"
+
+msgid "sugar"
+msgstr "السكر"
+
+msgid "sauce"
+msgstr "الصلصة"
+
+msgid "soup"
+msgstr "الشوربة"
+
+msgid "juice"
+msgstr "العصير"
+
+msgid "fries"
+msgstr "بطاطس مقلية"
+
+msgid "cake"
+msgstr "الكيك"
+
+msgid "mashed potatoes"
+msgstr "بطاطس مهروسة"
+
+msgid "tea"
+msgstr "الشاى"
+
+msgid "bun"
+msgstr "الكعكة"
+
+msgid "cheese"
+msgstr "الجبن"
+
+msgid "beef"
+msgstr "لحم بقرى"
+
+msgid "sandwich"
+msgstr "ساندوتش"
+
+msgid "slice"
+msgstr "شريحة"
+
+msgid "sprinkle"
+msgstr "رش"
+
+msgid "pizza"
+msgstr "البيتزا"
+
+msgid "flour"
+msgstr "الدقيق"
+
+msgid "gum"
+msgstr "علكة"
+
+msgid "spaghetti"
+msgstr "مكرونة سباجيتى"
+
+msgid "roast"
+msgstr "مشوى"
+
+msgid "stew"
+msgstr "حساء"
+
+msgid "spread"
+msgstr "منتشر"
+
+msgid "meat"
+msgstr "اللحم"
+
+msgid "milk"
+msgstr "اللبن"
+
+msgid "meal"
+msgstr "الوجبة"
+
+msgid "corn"
+msgstr "الذرة"
+
+msgid "bread"
+msgstr "الخبز"
+
+msgid "walnut"
+msgstr "عين الجمل"
+
+msgid "egg"
+msgstr "البيض"
+
+msgid "hot dog"
+msgstr "نقانق"
+
+msgid "ham"
+msgstr "لحم خنزير"
+
+msgid "jewellery"
+msgstr "المجوهرات"
+
+msgid "sock"
+msgstr "جورب"
+
+msgid "jacket"
+msgstr "السترة"
+
+msgid "heel"
+msgstr "كعب الحذاء"
+
+msgid "smock"
+msgstr "الثوب"
+
+msgid "shorts"
+msgstr "السروال القصير"
+
+msgid "pocket"
+msgstr "الجيب"
+
+msgid "necklace"
+msgstr "القلادة"
+
+msgid "sweatshirt"
+msgstr "قميص ثقيل"
+
+msgid "uniform"
+msgstr "زى موحد"
+
+msgid "raincoat"
+msgstr "معطف مطر"
+
+msgid "trousers"
+msgstr "البنطلون"
+
+msgid "sunglasses"
+msgstr "النظارات"
+
+msgid "coat"
+msgstr "المعطف"
+
+msgid "pullover"
+msgstr "البلوفر/ الكنزة"
+
+msgid "shirt"
+msgstr "قميص"
+
+msgid "sandals"
+msgstr "الصندل"
+
+msgid "suit"
+msgstr "البدلة"
+
+msgid "pyjamas"
+msgstr "البيجاما"
+
+msgid "skirt"
+msgstr "التنورة"
+
+msgid "zip"
+msgstr "سحاب"
+
+msgid "shoes"
+msgstr "الحذاء"
+
+msgid "jewel"
+msgstr "الجوهرة"
+
+msgid "tie"
+msgstr "ربطة العنق"
+
+msgid "slippers"
+msgstr "شباشب"
+
+msgid "gloves"
+msgstr "القفازات"
+
+msgid "hat"
+msgstr "القبعة"
+
+msgid "sleeve"
+msgstr "كم الثوب"
+
+msgid "cap"
+msgstr "كاب / قبعة"
+
+msgid "swimming suit"
+msgstr "زى السباحة"
+
+msgid "trainer"
+msgstr "المدرب"
+
+msgid "vest"
+msgstr "صديرى / سترة"
+
+msgid "glasses"
+msgstr "النظارات"
+
+msgid "shoelace"
+msgstr "رباط الحذاء"
+
+msgid "patch"
+msgstr "رقعة قماشية"
+
+msgid "scarf"
+msgstr "وشاح"
+
+msgid "shoe"
+msgstr "حذاء"
+
+msgid "button"
+msgstr "زرار"
+
+msgid "dress"
+msgstr "الفستان"
+
+msgid "sash"
+msgstr "الحزام"
+
+msgid "shoe sole"
+msgstr "نعل الحذاء"
+
+msgid "robe"
+msgstr "الحبل"
+
+msgid "pants"
+msgstr "بنطلون / سروال"
+
+msgid "kimono"
+msgstr "الكيمونو اليابانى"
+
+msgid "overalls"
+msgstr "افرول / ثياب العمل"
+
+msgid "lick"
+msgstr "لعق"
+
+msgid "slam"
+msgstr "ضرب / سحق"
+
+msgid "beg"
+msgstr "التمس"
+
+msgid "fell"
+msgstr "سقط"
+
+msgid "scratch"
+msgstr "خدش"
+
+msgid "touch"
+msgstr "لمس"
+
+msgid "sniff"
+msgstr "شم / تنشق"
+
+msgid "see"
+msgstr "يرى"
+
+msgid "climb"
+msgstr "يتسلق"
+
+msgid "dig"
+msgstr "يحفر"
+
+msgid "howl"
+msgstr "يعوى / عواء"
+
+msgid "sleep"
+msgstr "ينام "
+
+msgid "explore"
+msgstr "يستكشف"
+
+msgid "draw"
+msgstr "يرسم"
+
+msgid "hug"
+msgstr "يعانق"
+
+msgid "teach"
+msgstr "يعلم"
+
+msgid "nap"
+msgstr "يغفو"
+
+msgid "clay"
+msgstr "طين"
+
+msgid "catch"
+msgstr "يمسك"
+
+msgid "clap"
+msgstr "يصفق"
+
+msgid "cry"
+msgstr "يبكى"
+
+msgid "sing"
+msgstr "يغنى"
+
+msgid "meet"
+msgstr "يقابل"
+
+msgid "sell"
+msgstr "يبيع"
+
+msgid "peck"
+msgstr "اقلق"
+
+msgid "beat"
+msgstr "يهزم"
+
+msgid "kneel"
+msgstr "يركع"
+
+msgid "find"
+msgstr "يكتشف"
+
+msgid "dance"
+msgstr "يرقص"
+
+msgid "cough"
+msgstr "يكح"
+
+msgid "cut"
+msgstr "يقطع"
+
+msgid "think"
+msgstr "يفكر"
+
+msgid "bark"
+msgstr "نباح/ لحاء الشجر"
+
+msgid "speak"
+msgstr "يتحدث"
+
+msgid "cheer"
+msgstr "يشجع"
+
+msgid "bake"
+msgstr "يخبز"
+
+msgid "write"
+msgstr "يكتب"
+
+msgid "punch"
+msgstr "يضرب"
+
+msgid "strum"
+msgstr "يداعب الاوتار"
+
+msgid "study"
+msgstr "يذاكر"
+
+msgid "plow"
+msgstr "محراث"
+
+msgid "dream"
+msgstr "حلم"
+
+msgid "post"
+msgstr "بريد"
+
+msgid "dive"
+msgstr "يغوص"
+
+msgid "whisper"
+msgstr "يهمس"
+
+msgid "sob"
+msgstr "يتنهد"
+
+msgid "shake"
+msgstr "يهز"
+
+msgid "feed"
+msgstr "يطعم"
+
+msgid "crawl"
+msgstr "يزحف"
+
+msgid "camp"
+msgstr "يخيم"
+
+msgid "spill"
+msgstr "يسكب"
+
+msgid "clean"
+msgstr "ينظف"
+
+msgid "scream"
+msgstr "يصرخ"
+
+msgid "tear"
+msgstr "يمزق"
+
+msgid "float"
+msgstr "يطفو"
+
+msgid "pull"
+msgstr "يجذب"
+
+msgid "ate"
+msgstr "أكل"
+
+msgid "kiss"
+msgstr "يقبل"
+
+msgid "sit"
+msgstr "يجلس"
+
+msgid "hatch"
+msgstr "يفقس"
+
+msgid "blink"
+msgstr "يرمش"
+
+msgid "hear"
+msgstr "يسمع"
+
+msgid "smooch"
+msgstr "يتبادل القبل"
+
+msgid "play"
+msgstr "يلعب"
+
+msgid "wash"
+msgstr "يغسل"
+
+msgid "chat"
+msgstr "يدردش"
+
+msgid "drive"
+msgstr "يقود"
+
+msgid "to drink"
+msgstr "يشرب"
+
+msgid "fly"
+msgstr "يطير"
+
+msgid "juggle"
+msgstr "يقذف"
+
+msgid "bit"
+msgstr "عض"
+
+msgid "sweep"
+msgstr "يكنس"
+
+msgid "look"
+msgstr "ينظر"
+
+msgid "knit"
+msgstr "يحيك"
+
+msgid "lift"
+msgstr "يرفع"
+
+msgid "fetch"
+msgstr "يجلب"
+
+msgid "read"
+msgstr "يقرأ"
+
+msgid "croak"
+msgstr "تكلم بصوت أجش"
+
+msgid "stare"
+msgstr "يحملق"
+
+msgid "eat"
+msgstr "يأكل"
+
+msgid "lighthouse"
+msgstr "منارة"
+
+msgid "door"
+msgstr "الباب"
+
+msgid "circus"
+msgstr "سيرك"
+
+msgid "church"
+msgstr "كنيسة"
+
+msgid "kennel"
+msgstr "بيت الكلب"
+
+msgid "temple"
+msgstr "معبد"
+
+msgid "smoke"
+msgstr "دخان"
+
+msgid "chimney"
+msgstr "مدخنة"
+
+msgid "brick"
+msgstr "طوبة"
+
+msgid "well"
+msgstr "بئر"
+
+msgid "street"
+msgstr "شارع"
+
+msgid "castle"
+msgstr "قلعة"
+
+msgid "store"
+msgstr "محل"
+
+msgid "staircase"
+msgstr "درج"
+
+msgid "school"
+msgstr "مدرسة"
+
+msgid "farm"
+msgstr "مزرعة"
+
+msgid "bridge"
+msgstr "جسر"
+
+msgid "dam"
+msgstr "سد"
+
+msgid "pyramid"
+msgstr "هرم"
+
+msgid "barn"
+msgstr "حظيرة"
+
+msgid "mill"
+msgstr "طاحونة"
+
+msgid "window"
+msgstr "نافذة"
+
+msgid "cabin"
+msgstr "قمرة"
+
+msgid "step"
+msgstr "درجة"
+
+msgid "shop"
+msgstr "محل"
+
+msgid "shed"
+msgstr "سقيفة"
+
+msgid "roof"
+msgstr "سطح"
+
+msgid "steeple"
+msgstr "برج الكنيسة"
+
+msgid "garage"
+msgstr "كراج\\ ورشة"
+
+msgid "mosque"
+msgstr "مسجد"
+
+msgid "hospital"
+msgstr "مستشفي"
+
+msgid "tent"
+msgstr "خيمة"
+
+msgid "house"
+msgstr "منزل"
+
+msgid "wall"
+msgstr "جدار"
+
+msgid "bank"
+msgstr "بنك"
+
+msgid "shutter"
+msgstr "مصراع النافذة"
+
+msgid "hut"
+msgstr "كوخ"
+
+msgid "land"
+msgstr "أرض"
+
+msgid "cliff"
+msgstr "مرتقع صخري"
+
+msgid "hill"
+msgstr "تل"
+
+msgid "canyon"
+msgstr "وادى"
+
+msgid "rock"
+msgstr "صخرة"
+
+msgid "sea"
+msgstr "البحر"
+
+msgid "lake"
+msgstr "البحيرة"
+
+msgid "coast"
+msgstr "ساحل"
+
+msgid "shore"
+msgstr "شاطيء"
+
+msgid "mountain"
+msgstr "جبل"
+
+msgid "pond"
+msgstr "بحيرة"
+
+msgid "peak"
+msgstr "قمة"
+
+msgid "lava"
+msgstr "صخور ملتهبة"
+
+msgid "cave"
+msgstr "كهف"
+
+msgid "dune"
+msgstr "كثب"
+
+msgid "island"
+msgstr "جزيرة"
+
+msgid "forest"
+msgstr "غابة"
+
+msgid "desert"
+msgstr "صحراء"
+
+msgid "iceberg"
+msgstr "جبل ثلج"
+
+msgid "clown"
+msgstr "مهرج"
+
+msgid "engineer"
+msgstr "مهندس"
+
+msgid "priest"
+msgstr "قسيس"
+
+msgid "vet"
+msgstr "طبيب بيطرى"
+
+msgid "judge"
+msgstr "قاضي"
+
+msgid "chef"
+msgstr "طباخ"
+
+msgid "athlete"
+msgstr "لاعب رياضي"
+
+msgid "librarian"
+msgstr "أمين مكتبة"
+
+msgid "juggler"
+msgstr "بهلوانى"
+
+msgid "policeman"
+msgstr "رجل شرطة"
+
+msgid "plumber"
+msgstr "سباك"
+
+msgid "badge"
+msgstr "شارة"
+
+msgid "queen"
+msgstr "ملكة"
+
+msgid "farmer"
+msgstr "فلاح"
+
+msgid "magician"
+msgstr "ساحر"
+
+msgid "knight"
+msgstr "فارس"
+
+msgid "doctor"
+msgstr "طبيب"
+
+msgid "bricklayer"
+msgstr "عامل بناء"
+
+msgid "cleaner"
+msgstr "عامل نظافة"
+
+msgid "teacher"
+msgstr "معلم"
+
+msgid "hunter"
+msgstr "صياد"
+
+msgid "soldier"
+msgstr "جندى"
+
+msgid "musician"
+msgstr "موسيقي"
+
+msgid "lawyer"
+msgstr "محامى"
+
+msgid "fisherman"
+msgstr "صياد"
+
+msgid "princess"
+msgstr "أميرة"
+
+msgid "fireman"
+msgstr "إطفائي"
+
+msgid "nun"
+msgstr "راهبة"
+
+msgid "pirate"
+msgstr "قرصان"
+
+msgid "cowboy"
+msgstr "راعى بقر"
+
+msgid "electrician"
+msgstr "كهربائي"
+
+msgid "nurse"
+msgstr "ممرض"
+
+msgid "king"
+msgstr "ملك"
+
+msgid "president"
+msgstr "رئيس"
+
+msgid "office worker"
+msgstr "عامل مكتبي"
+
+msgid "carpenter"
+msgstr "نجار"
+
+msgid "jockey"
+msgstr "فارس السباق"
+
+msgid "worker"
+msgstr "عامل"
+
+msgid "mechanic"
+msgstr "ميكانيكى"
+
+msgid "pilot"
+msgstr "طيار"
+
+msgid "actor"
+msgstr "ممثل"
+
+msgid "cook"
+msgstr "طاهى"
+
+msgid "student"
+msgstr "طالب"
+
+msgid "butcher"
+msgstr "جزار"
+
+msgid "accountant"
+msgstr "محاسب"
+
+msgid "prince"
+msgstr "أمير"
+
+msgid "pope"
+msgstr "بابا الفاتيكان"
+
+msgid "sailor"
+msgstr "بحار"
+
+msgid "boxer"
+msgstr "ملاكم"
+
+msgid "ballet dancer"
+msgstr "راقص بالية"
+
+msgid "coach"
+msgstr "مدرب"
+
+msgid "astronaut"
+msgstr "عالم فلك"
+
+msgid "painter"
+msgstr "رسام"
+
+msgid "anaesthesiologist"
+msgstr "طبيب تخدير"
+
+msgid "scientist"
+msgstr "عالم"
+
+msgid "carrot"
+msgstr "جزر"
+
+msgid "blackberries"
+msgstr "توت العليق"
+
+msgid "celery"
+msgstr "كرفس"
+
+msgid "turnip"
+msgstr "لفت"
+
+msgid "cacao"
+msgstr "كاكاو"
+
+msgid "peach"
+msgstr "خوخة"
+
+msgid "melon"
+msgstr "شمام"
+
+msgid "grapefruit"
+msgstr "جريب فروت"
+
+msgid "broccoli"
+msgstr "بروكلى"
+
+msgid "grapes"
+msgstr "عنب"
+
+msgid "spinach"
+msgstr "سبانخ"
+
+msgid "fig"
+msgstr "تين"
+
+msgid "kernel"
+msgstr "بذرة"
+
+msgid "radish"
+msgstr "فجل"
+
+msgid "tomato"
+msgstr "طماطم"
+
+msgid "kiwi"
+msgstr "كيوي"
+
+msgid "asparagus"
+msgstr "نبات الهليون"
+
+msgid "olives"
+msgstr "زيتون"
+
+msgid "cucumbers"
+msgstr "خيار"
+
+msgid "beans"
+msgstr "الفول"
+
+msgid "strawberry"
+msgstr "الفراولة"
+
+msgid "peppers"
+msgstr "الفلفل"
+
+msgid "raspberry"
+msgstr "توت العليق"
+
+msgid "apricot"
+msgstr "مشمش"
+
+msgid "potatoes"
+msgstr "بطاطس"
+
+msgid "peas"
+msgstr "بازيلاء"
+
+msgid "cabbage"
+msgstr "الكرنب / الملفوف"
+
+msgid "cherries"
+msgstr "الكرز"
+
+msgid "squash"
+msgstr "سحق"
+
+msgid "blueberries"
+msgstr "توت"
+
+msgid "pear"
+msgstr "كمثرى"
+
+msgid "orange"
+msgstr "البرتقال"
+
+msgid "pumpkin"
+msgstr "القرع العسلى"
+
+msgid "avocado"
+msgstr "الافوكادو"
+
+msgid "garlic"
+msgstr "الثوم"
+
+msgid "onion"
+msgstr "البصل"
+
+msgid "apple"
+msgstr "التفاح"
+
+msgid "lime"
+msgstr "الليمون"
+
+msgid "cauliflower"
+msgstr "القرنبيط"
+
+msgid "mango"
+msgstr "المانجو"
+
+msgid "lettuce"
+msgstr "الخس"
+
+msgid "lemon"
+msgstr "الليمون"
+
+msgid "aubergine"
+msgstr "الباذنجان"
+
+msgid "artichokes"
+msgstr "الخرشوف"
+
+msgid "plums"
+msgstr "البرقوق"
+
+msgid "leek"
+msgstr "الثوم"
+
+msgid "bananas"
+msgstr "الموز"
+
+msgid "papaya"
+msgstr "البابايا"
+
+msgid "sail"
+msgstr "الشراع"
+
+msgid "taxi"
+msgstr "التاكسى"
+
+msgid "car"
+msgstr "السيارة"
+
+msgid "bike"
+msgstr "دراجة هوائية"
+
+msgid "raft"
+msgstr "طوف"
+
+msgid "pedal"
+msgstr "الدواسة"
+
+msgid "bus"
+msgstr "اوتوبيس"
+
+msgid "handlebar"
+msgstr "مقود الدراجة"
+
+msgid "boat"
+msgstr "القارب"
+
+msgid "truck"
+msgstr "الشاحنة"
+
+msgid "sleigh"
+msgstr "زلاجة الجليد"
+
+msgid "carpet"
+msgstr "السجادة"
+
+msgid "motorcycle"
+msgstr "دراجة نارية"
+
+msgid "train"
+msgstr "قطار"
+
+msgid "ship"
+msgstr "سفينة"
+
+msgid "van"
+msgstr "شاحنة صغيرة"
+
+msgid "canoe"
+msgstr "قارب الكنو"
+
+msgid "rocket"
+msgstr "صاروخ"
+
+msgid "mast"
+msgstr "سارية"
+
+msgid "sledge"
+msgstr "تزلج"
+
+msgid "bicycle"
+msgstr "دراجة"

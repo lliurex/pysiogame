@@ -3,13 +3,14 @@
 import pygame
 from math import pi, cos, sin, fsum
 
-from classes.simple_vector import Vector2
-
 
 class Ratio:
-    def __init__(self, unit_size, scale, color1, color2, color3, border_color1, border_color2, border_color3, numbers):
+    def __init__(self, unit_size, scale, color1, color2, color3, border_color1, border_color2, border_color3, numbers,
+                 scale_factor=1):
         self.size = unit_size * scale
         self.center = [self.size // 2, self.size // 2]
+        self.r = int(self.size // 2.5 * scale_factor)
+        self.r2 = int(self.size // 17 * scale_factor)
 
         self.color1 = color1
         self.color2 = color2
@@ -20,7 +21,7 @@ class Ratio:
         self.numbers = numbers
         self.type = type
 
-        self.canvas = pygame.Surface([self.size, self.size - 1], flags=pygame.SRCALPHA)
+        self.canvas = pygame.Surface((self.size, self.size - 1), flags=pygame.SRCALPHA)
         self.canvas.fill((0, 0, 0, 0))
 
         self.draw_minicircles()
@@ -37,8 +38,8 @@ class Ratio:
         ttl = int(fsum(self.numbers))
         angle_step = 2 * pi / ttl
         angle_start = -pi / 2
-        r = self.size // 2.5
-        r2 = self.size // 17
+        r = self.r #self.size // 2.5
+        r2 = self.r2 #size // 17
         # manually draw the arc - the 100% width of the arc does not impress
 
         for i in range(ttl):
@@ -57,4 +58,3 @@ class Ratio:
             else:
                 pygame.draw.circle(self.canvas, self.color3, [int(x), int(y)], r2, 0)
                 pygame.draw.circle(self.canvas, self.border_color3, [int(x), int(y)], r2, 2)
-            # Draw the line from the self.center to the calculated end point

@@ -30,7 +30,6 @@ class Board(gd.BoardGame):
 
         self.color_s = random.randrange(50, 90, 5)
         self.color_v = random.randrange(230, 255, 5)
-        h = random.randrange(0, 255, 5)
         self.bg_color = [255, 255, 255]
         color = [255, 255, 255]
         txt_color = (0, 25, 160)
@@ -65,6 +64,12 @@ class Board(gd.BoardGame):
         self.chosen = 0
         self.shape_id = -1
         self.tria_variant = 0
+        if self.lang.ltr_text:
+            self.ind3 = [0, 1, 2]
+            self.ind2 = [0, 1]
+        else:
+            self.ind3 = [2, 1, 0]
+            self.ind2 = [1, 0]
 
         data = [25, 14]
         # stretch width to fit the screen size
@@ -156,7 +161,7 @@ class Board(gd.BoardGame):
             each.immobilize()
 
         self.canvas = pygame.Surface(
-            [self.canvas_block.grid_w * self.board.scale, self.canvas_block.grid_h * self.board.scale - 1])
+            (self.canvas_block.grid_w * self.board.scale, self.canvas_block.grid_h * self.board.scale - 1))
         self.name = None
         self.new_screen()
 
@@ -171,15 +176,10 @@ class Board(gd.BoardGame):
 
     def pick_shape(self):
         prev_chosen = self.chosen
-        while (self.chosen == prev_chosen):
+        while self.chosen == prev_chosen:
             self.chosen = random.choice(self.choice)
-
         self.chosen_shape_name = self.shape_names[self.chosen]
-        if self.level.lvl == 1:
-            self.name_label.value = self.lang.d["draw_instr1"] % self.chosen_shape_name
-        else:
-            self.name_label.value = self.lang.d["draw_instr2"] % self.chosen_shape_name
-
+        self.name_label.value = self.lang.d["draw_instr1"] % self.chosen_shape_name
         self.tria_variant = 0
 
         if self.check_sizes:
@@ -191,7 +191,7 @@ class Board(gd.BoardGame):
                 h = random.randrange(2, self.max_side_len - 2)
                 self.shape_sizes = [b1, b2, h]
                 self.size_instr.value = self.lang.d["size_instr_0"] % (
-                self.shape_sizes[0], self.shape_sizes[1], self.shape_sizes[2])
+                self.shape_sizes[self.ind3[0]], self.shape_sizes[self.ind3[1]], self.shape_sizes[self.ind3[2]])
 
             elif self.chosen == 7:  # iso_trapezium
                 b1 = random.randrange(4, self.max_side_len, 2)
@@ -199,13 +199,14 @@ class Board(gd.BoardGame):
                 h = random.randrange(2, self.max_side_len - 3)
                 self.shape_sizes = [b1, b2, h]
                 self.size_instr.value = self.lang.d["size_instr_0"] % (
-                self.shape_sizes[0], self.shape_sizes[1], self.shape_sizes[2])
+                self.shape_sizes[self.ind3[0]], self.shape_sizes[self.ind3[1]], self.shape_sizes[self.ind3[2]])
 
             elif self.chosen == 2:  # parallelogram
                 b1 = random.randrange(4, self.max_side_len)
                 h = random.randrange(2, self.max_side_len-3)
                 self.shape_sizes = [b1, h]
-                self.size_instr.value = self.lang.d["size_instr_3"] % (self.shape_sizes[0], self.shape_sizes[1])
+                self.size_instr.value = self.lang.d["size_instr_3"] % (
+                    self.shape_sizes[self.ind2[0]], self.shape_sizes[self.ind2[1]])
 
             elif self.chosen == 4:  # square
                 b1 = random.randrange(2, self.max_side_len)
@@ -218,7 +219,8 @@ class Board(gd.BoardGame):
                 b2_choice.extend(range(b1 + 1, self.max_side_len))
                 b2 = random.choice(b2_choice)
                 self.shape_sizes = [b1, b2]
-                self.size_instr.value = self.lang.d["size_instr_2"] % (self.shape_sizes[0], self.shape_sizes[1])
+                self.size_instr.value = self.lang.d["size_instr_2"] % (
+                    self.shape_sizes[self.ind2[0]], self.shape_sizes[self.ind2[1]])
 
             elif self.chosen == 11:  # right iso tria
                 b1 = random.randrange(2, self.max_side_len)
@@ -233,7 +235,8 @@ class Board(gd.BoardGame):
                     b2_choice.extend(range(b1 + 1, self.max_side_len))
                     b2 = random.choice(b2_choice)
                     self.shape_sizes = [b1, b2]
-                    self.size_instr.value = self.lang.d["size_instr_5"] % (self.shape_sizes[0], self.shape_sizes[1])
+                    self.size_instr.value = self.lang.d["size_instr_5"] % (
+                        self.shape_sizes[self.ind2[0]], self.shape_sizes[self.ind2[1]])
                 else:
                     b1 = random.randrange(4, self.max_side_len, 2)
                     self.shape_sizes = [b1]
@@ -250,7 +253,8 @@ class Board(gd.BoardGame):
                     b1 = random.randrange(2, self.max_side_len)
                     h = random.randrange(2, self.max_side_len)
                 self.shape_sizes = [b1, h]
-                self.size_instr.value = self.lang.d["size_instr_4"] % (self.shape_sizes[0], self.shape_sizes[1])
+                self.size_instr.value = self.lang.d["size_instr_4"] % (
+                    self.shape_sizes[self.ind2[0]], self.shape_sizes[self.ind2[1]])
             elif self.chosen == 18:  # circle
                 r = random.randrange(2, self.max_side_len)
                 self.shape_sizes = [r]
@@ -274,57 +278,55 @@ class Board(gd.BoardGame):
 
     def validate_shape(self):
         ok = False
-        if self.chosen == self.shape_id or self.chosen == 1 and self.shape_id in [1, 6, 7,
-                                                                                  8] or self.chosen == 10 and self.shape_id in [
-            10, 11, 12, 13, 14, 15, 16, 17] or self.chosen == 12 and self.shape_id in [11,
-                                                                                       12] or self.chosen == 15 and self.shape_id in [
-            14, 15] or self.chosen == 17 and self.shape_id in [16,
-                                                               17] or self.check_sizes and self.chosen == 2 and self.shape_id in [
-            2, 3]:
+        if (self.chosen == self.shape_id or self.chosen == 1 and
+                self.shape_id in [1, 6, 7, 8] or self.chosen == 10 and
+                self.shape_id in [10, 11, 12, 13, 14, 15, 16, 17] or self.chosen == 12 and
+                self.shape_id in [11, 12] or self.chosen == 15 and
+                self.shape_id in [14, 15] or self.chosen == 17 and self.shape_id in [16, 17] or
+                self.check_sizes and self.chosen == 2 and self.shape_id in [2, 3]):
             if self.check_sizes:
                 if self.shape_id in [10, 11, 12, 13, 14, 15, 16, 17]:  # any triangle
                     if self.shape_id in [11, 12] and self.tria_variant == 1:
                         if self.is_near(max(self.dst), self.shape_sizes[0]):
                             ok = True
                     else:
-                        if self.is_near(self.dst[0], self.shape_sizes[0]) and self.is_near(self.heights[0],
-                                                                                           self.shape_sizes[
-                                                                                               1]) or self.is_near(
-                                self.dst[1], self.shape_sizes[0]) and self.is_near(self.heights[1],
-                                                                                   self.shape_sizes[1]) or self.is_near(
-                                self.dst[2], self.shape_sizes[0]) and self.is_near(self.heights[2],
-                                                                                   self.shape_sizes[1]):
+                        if (self.is_near(self.dst[0], self.shape_sizes[0]) and
+                                self.is_near(self.heights[0], self.shape_sizes[1]) or
+                                self.is_near(self.dst[1], self.shape_sizes[0]) and
+                                self.is_near(self.heights[1], self.shape_sizes[1]) or
+                                self.is_near(self.dst[2], self.shape_sizes[0]) and
+                                self.is_near(self.heights[2], self.shape_sizes[1])):
                             ok = True
                 elif self.shape_id in [1, 6, 7, 8]:
                     if self.trapezium_variant == 1:
-                        if ((self.is_near(self.dst[0], self.shape_sizes[0]) and self.is_near(self.dst[2],
-                                                                                             self.shape_sizes[
-                                                                                                 1]) or self.is_near(
-                                self.dst[2], self.shape_sizes[0]) and self.is_near(self.dst[0], self.shape_sizes[
-                            1])) and self.is_near(self.heights[1], self.shape_sizes[2])):
+                        if ((self.is_near(self.dst[0], self.shape_sizes[0]) and
+                             self.is_near(self.dst[2], self.shape_sizes[1]) or
+                             self.is_near(self.dst[2], self.shape_sizes[0]) and
+                             self.is_near(self.dst[0], self.shape_sizes[1])) and
+                                self.is_near(self.heights[1], self.shape_sizes[2])):
                             ok = True
                     elif self.trapezium_variant == 0:
-                        if ((self.is_near(self.dst[1], self.shape_sizes[0]) and self.is_near(self.dst[3],
-                                                                                             self.shape_sizes[
-                                                                                                 1]) or self.is_near(
-                                self.dst[3], self.shape_sizes[0]) and self.is_near(self.dst[1], self.shape_sizes[
-                            1])) and self.is_near(self.heights[0], self.shape_sizes[2])):
+                        if ((self.is_near(self.dst[1], self.shape_sizes[0]) and
+                             self.is_near(self.dst[3], self.shape_sizes[1]) or
+                             self.is_near(self.dst[3], self.shape_sizes[0]) and
+                             self.is_near(self.dst[1], self.shape_sizes[1])) and
+                                self.is_near(self.heights[0], self.shape_sizes[2])):
                             ok = True
                 elif self.shape_id in [2, 3]:
-                    if (self.is_near(self.dst[0], self.shape_sizes[0]) and self.is_near(self.heights[1],
-                                                                                        self.shape_sizes[1])) or (
-                        self.is_near(self.dst[1], self.shape_sizes[0]) and self.is_near(self.heights[0],
-                                                                                        self.shape_sizes[1])):
+                    if ((self.is_near(self.dst[0], self.shape_sizes[0]) and
+                        self.is_near(self.heights[1], self.shape_sizes[1])) or
+                            (self.is_near(self.dst[1], self.shape_sizes[0]) and
+                             self.is_near(self.heights[0], self.shape_sizes[1]))):
                         ok = True
                 elif self.shape_id == 4:
-                    if (self.is_near(self.dst[0], self.shape_sizes[0]) and self.is_near(self.dst[1],
-                                                                                        self.shape_sizes[0])):
+                    if (self.is_near(self.dst[0], self.shape_sizes[0]) and
+                            self.is_near(self.dst[1], self.shape_sizes[0])):
                         ok = True
                 elif self.shape_id == 5:
-                    if (self.is_near(self.dst[0], self.shape_sizes[0]) and self.is_near(self.dst[1],
-                                                                                        self.shape_sizes[1])) or (
-                        self.is_near(self.dst[0], self.shape_sizes[1]) and self.is_near(self.dst[1],
-                                                                                        self.shape_sizes[0])):
+                    if ((self.is_near(self.dst[0], self.shape_sizes[0]) and
+                        self.is_near(self.dst[1], self.shape_sizes[1])) or
+                            (self.is_near(self.dst[0], self.shape_sizes[1]) and
+                             self.is_near(self.dst[1], self.shape_sizes[0]))):
                         ok = True
                 elif self.shape_id == 18:
                     if self.is_near(self.circle_r / float(self.guide_scale), self.shape_sizes[0]):
@@ -420,7 +422,7 @@ class Board(gd.BoardGame):
         self.mainloop.redraw_needed[0] = True
 
     def handle(self, event):
-        gd.BoardGame.handle(self, event)  # send event handling up
+        gd.BoardGame.handle(self, event)
         if event.type == pygame.MOUSEBUTTONDOWN:
             pos = event.pos
             column = (pos[0] - self.px_padding) // (self.layout.width)
@@ -441,7 +443,7 @@ class Board(gd.BoardGame):
                     self.change_tool(3)
                 elif active == self.circle_btn.unit_id:
                     self.change_tool(2)
-                elif active == self.next_btn.unit_id and self.next_btn.keyable == True:
+                elif active == self.next_btn.unit_id and self.next_btn.keyable:
                     self.next_shape()
 
             if event.button == 1 and column >= 0 and 2 <= row < self.data[1]:
@@ -458,7 +460,6 @@ class Board(gd.BoardGame):
                             self.check_drawing()
 
         elif event.type == pygame.MOUSEMOTION and 0 < self.points_count < self.max_points:
-            active = self.board.active_ship
             pos = event.pos
             column = (pos[0] - self.px_padding) // (self.layout.width)
             row = (pos[1] - self.layout.top_margin) // (self.layout.height)
@@ -492,7 +493,6 @@ class Board(gd.BoardGame):
 
                 if self.max_points == 2:
                     v = sv.Vector2.from_points(self.points[0], self.p_current)
-                    # print(v)
                     if v[0] != 0 or v[1] != 0:
                         r = math.sqrt(v[0] * v[0] + v[1] * v[1])
                     else:
@@ -578,7 +578,7 @@ class Board(gd.BoardGame):
 
     def update(self, game):
         game.fill((255, 255, 255))
-        gd.BoardGame.update(self, game)  # rest of painting done by parent
+        gd.BoardGame.update(self, game)
 
     def v2_to_int(self, vector):
         integers = [int(each) for each in vector]
@@ -672,15 +672,15 @@ class Board(gd.BoardGame):
         return x1 * y2 - x2 * y1 == 0  # 1e-12
 
     def collinear4(self, p):
-        if self.collinear(p[0], p[1], p[2]) or self.collinear(p[1], p[2], p[3]) or self.collinear(p[2], p[3], p[
-            0]) or self.collinear(p[3], p[0], p[1]):
+        if (self.collinear(p[0], p[1], p[2]) or self.collinear(p[1], p[2], p[3]) or
+                self.collinear(p[2], p[3], p[0]) or self.collinear(p[3], p[0], p[1])):
             return True
         else:
             return False
 
     def collinear_all(self, p):
-        if self.collinear(p[0], p[1], p[2]) and self.collinear(p[1], p[2], p[3]) and self.collinear(p[2], p[3], p[
-            0]) and self.collinear(p[3], p[0], p[1]):
+        if (self.collinear(p[0], p[1], p[2]) and self.collinear(p[1], p[2], p[3]) and
+                self.collinear(p[2], p[3], p[0]) and self.collinear(p[3], p[0], p[1])):
             return True
         else:
             return False

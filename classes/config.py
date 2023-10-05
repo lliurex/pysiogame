@@ -22,7 +22,7 @@ class Config:
         self.fs_height = 768
         self.debug_screen_size = None  # [900,600]
         # size_limits - don't let window resizing get out of hand [min_w, min_h, max_w, max_h]
-        self.size_limits = [838, 570, 2000, 2000]
+        self.size_limits = [838, 570, 4000, 2000]
         # [670,480,2000,2000] #800 - minimum to fit all buttons, 2000 - with over 2000 pixels each way pygame is not redrawing very well
         # set total size of OS panels and window decorations on both sides - used in windowed version. Not so much important now with resizing enabled.
         # this will not be auto-detected
@@ -109,41 +109,37 @@ class Config:
         # [0 language, 1 talkative, 2 untranslated languages, 3 full screen, 4 user_name, 5 screen_w, 6 screen_h]
 
         self.settings = dict()
-        try:
-            import pyfribidi
-            self.fribidi_loaded = True
-            self.frididi = pyfribidi
-            s = ex.unival('العربية')
-            self.arabic = self.frididi.log2vis(s)
-        except:
-            self.fribidi_loaded = False
-            self.frididi = None
-            self.arabic = "Arabic"
-
         self.set_font_family()
 
-        if self.fribidi_loaded:
-            self.lang_titles = ["English", "American English", "Català", "Deutsch", "Español", "Français", "Italiano", "Lakȟótiyapi",
-                                "Polski", "Português", "Suomalainen", "Ελληνικά", "Български", "Русский", "Српски", "Українська",
-                                "תירבע", self.arabic]
-            self.all_lng = ["en_GB", "en_US", "ca", "de", "es_ES", "fr", "it", "lkt", "pl", "pt_PT", "fi", "el", "bg", "ru", "sr",
-                            "uk", "he", "ar"]
-            self.ok_lng = ["en_GB", "en_US", "ca", "de", "es_ES", "fr", "it", "lkt", "pl", "pt_PT", "fi", "el", "bg", "ru", "sr",
-                           "uk", "he"]
+        if ex.fribidi_loaded or ex.ar_reshaper_loaded:
+            s = ex.unival('العربية')
+            self.arabic = ex.ar_rtl(s)
+            # Malayam: "മലയാളം" 22: "",
+            self.lang_titles = ["English", "American English", "Català", "Deutsch", "Español", "Français", "Italiano",
+                                "Lakȟótiyapi", "Nederlands", "Polski", "Português", "Suomalainen", "Ελληνικά",
+                                "Български", "Русский", "Српски", "Українська", "תירבע", self.arabic]
+            self.all_lng = ["en_GB", "en_US", "ca", "de", "es_ES", "fr", "it", "lkt", "nl", "pl", "pt_PT", "fi", "el",
+                            "bg", "ru", "sr", "uk", "he", "ar"]
+            self.ok_lng = ["en_GB", "en_US", "ca", "de", "es_ES", "fr", "it", "lkt", "nl", "pl", "pt_PT", "fi", "el",
+                           "bg", "ru", "sr", "uk", "he", "ar"]
         else:
-            self.lang_titles = ["English", "American English", "Català", "Deutsch", "Español", "Français", "Italiano", "Lakȟótiyapi",
-                                "Polski", "Português", "Suomalainen", "Ελληνικά", "Български", "Русский", "Српски", "Українська",
-                                "תירבע"]
-            self.all_lng = ["en_GB", "en_US", "ca", "de", "es_ES", "fr", "it", "lkt", "pl", "pt_PT", "fi", "el", "bg", "ru", "sr",
-                            "uk", "he"]
-            self.ok_lng = ["en_GB", "en_US", "ca", "de", "es_ES", "fr", "it", "lkt", "pl", "pt_PT", "fi", "el", "bg", "ru", "sr",
-                           "uk", "he"]
+            self.arabic = "Arabic"
+            self.lang_titles = ["English", "American English", "Català", "Deutsch", "Español", "Français", "Italiano",
+                                "Lakȟótiyapi", "Nederlands", "Polski", "Português", "Suomalainen", "Ελληνικά",
+                                "Български", "Русский", "Српски", "Українська", "תירבע"]
+            self.all_lng = ["en_GB", "en_US", "ca", "de", "es_ES", "fr", "it", "lkt", "nl", "pl", "pt_PT", "fi", "el",
+                            "bg", "ru", "sr", "uk", "he"]
+            self.ok_lng = ["en_GB", "en_US", "ca", "de", "es_ES", "fr", "it", "lkt", "nl", "pl", "pt_PT", "fi", "el",
+                           "bg", "ru", "sr", "uk", "he"]
+
+        self.lang_progress = ["100%", "100%", "74%", "91%", "83%", "90%", "100%", "98%", "100%", "100%", "89%", "32%", "100%",
+                       "97%", "100%", "33%", "100%", "88%", "86%"]
 
         self.id2lng = {1: "English", 5: "Català", 19: "Српски", 12: "Deutsch", 8: "Español", 16: "Ελληνικά",
-                       17: "תירבע", 11: "Italiano", 20:  "Lakȟótiyapi", 3: "Polski", 9: "Português", 21: "Български", 13: "Русский", 15: "Suomalainen",
-                       14: "Українська", 2: self.arabic, 10: "Français"}
-        self.id2imgsuffix = {1: "", 5: "", 18: "ru", 12: "", 8: "", 16: "el", 17: "he", 11: "", 20: "", 3: "", 9: "", 21: "ru", 13: "ru",
-                             15: "", 14: "ru", 2: "ar", 10: ""}
+                       17: "תירבע", 11: "Italiano", 20: "Lakȟótiyapi", 7: "Nederlands", 3: "Polski", 9: "Português",
+                       21: "Български", 13: "Русский", 15: "Suomalainen", 14: "Українська", 2: self.arabic, 10: "Français"}
+        self.id2imgsuffix = {1: "", 5: "", 18: "ru", 12: "", 8: "", 16: "el", 17: "he", 11: "", 20: "", 7: "", 3: "",
+                             9: "", 21: "ru", 13: "ru", 15: "", 14: "ru", 2: "ar", 10: ""}
 
         """
         self.id2lng = {1: "English", 5: "Català", 19: "Српски", 12: "Deutsch", 8: "Español", 16: "Ελληνικά",
@@ -155,6 +151,7 @@ class Config:
 
     def set_font_family(self, variant=0):
         self.font_variant = variant
+
         if variant == 0:
             self.font_dir = 'LinLibertine'
             self.font_name_1 = 'LinBiolinum_RB_merged_with_Kacst.ttf'
@@ -162,7 +159,6 @@ class Config:
             self.font_multiplier = 1
             self.font_line_height_adjustment = 1.5
             self.font_start_at_adjustment = 5
-
         elif variant == 1:
             self.font_dir = 'FreeSans'
             self.font_name_1 = 'FreeSansBold.ttf'
@@ -181,6 +177,17 @@ class Config:
             self.font_line_height_adjustment = 1
             self.font_start_at_adjustment = 0
 
+        elif variant == 3:
+            self.font_dir = 'Noto'
+            self.font_name_1 = 'NotoSerifMalayalam-BoldPlus.ttf'
+            self.font_name_2 = self.font_name_1  # 'NotoSerifMalayalam-BoldPlus.ttf'
+            #self.arabic = "Arabic"
+            self.font_multiplier = 1
+            self.font_line_height_adjustment = 1.5
+            self.font_start_at_adjustment = 5
+        self.font_dir_noto = "Noto"
+        self.font_ml = 'NotoSerifMalayalam-Regular.ttf'
+
         """
         self.font_dir = 'LinLibertine'
         self.font_name_1 = 'LinBiolinum_RBah.ttf'
@@ -195,7 +202,7 @@ class Config:
         pass
 
     def load_settings(self, db, userid):
-        'loads saved settings from pickled file - language and screen size dimensions and mode'
+        """loads saved settings from pickled file - language and screen size dimensions and mode"""
         # load user settings
         u = db.load_user_settings(userid)
 
@@ -227,6 +234,6 @@ class Config:
         self.loaded_settings = True
 
     def save_settings(self, db):
-        'save settings to file'
+        """save settings to file"""
         db.save_user_settings(self.settings["lang"], self.settings["sounds"], self.settings["espeak"],
                               self.settings["screenw"], self.settings["screenh"], self.settings["scheme"])
